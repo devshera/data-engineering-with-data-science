@@ -12,6 +12,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.3.4] - 2026-10-21
+
+### Changed
+- Hero title re-set as two balanced lines ("Certificate in Data" / "Engineering Foundation") at up to 56px;
+  hero text column widened (1.4fr / 1fr) so the larger title fits on desktop.
+
 ## [1.3.3] - 2026-10-21
 
 ### Changed

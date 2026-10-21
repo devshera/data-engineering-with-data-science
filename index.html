@@ -36,9 +36,12 @@
     <link rel="stylesheet" href="style.css?v=20260614d" />
     <style>
       .modal__form-panel { padding: 0; overflow: hidden; }
-      /* hero title: two lines ("Certificate in" / "Data Engineering Foundation") */
-      .hero .h1 { font-size: clamp(24px, 7vw, 50px); }
-      @media (min-width: 901px) { .hero .h1 { font-size: clamp(28px, 3.4vw, 50px); } }
+      /* hero title: two balanced lines ("Certificate in Data" / "Engineering Foundation") */
+      .hero .h1 { font-size: min(56px, calc((100vw - 44px) / 10.9)); line-height: 1.08; letter-spacing: -0.015em; }
+      @media (min-width: 901px) {
+        .hero .h1 { font-size: min(56px, 3.9vw); }
+        .hero__inner { grid-template-columns: 1.4fr 1fr; }
+      }
       .hero__title-line { display: block; white-space: nowrap; }
       /* skills & tools: wrap and centre every row, including a shorter last row */
       .skills__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
@@ -575,7 +578,7 @@
           <div class="hero__copy" data-animate="fade-up">
             <span class="eyebrow">Four-Week Certificate · Instructor-Led</span>
             <h1 class="h1">
-              <span class="hero__title-line">Certificate in</span> <span class="hero__title-line"><span class="accent-underline">Data Engineering Foundation</span></span>
+              <span class="hero__title-line">Certificate in Data</span> <span class="hero__title-line"><span class="accent-underline">Engineering Foundation</span></span>
             </h1>
             <p class="lead">
               Build practical data preparation and ETL skills to transform raw files into reliable, analysis-ready data. Learn to import, profile, clean, standardize, combine and validate data using Excel-based workflows and Power Query.
