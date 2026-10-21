@@ -12,6 +12,11 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.3] - 2026-10-21
+
+### Changed
+- "Where data preparation skills fit at work." heading is a single line (scales down on small screens; wraps only below 481px).
+
 ## [1.5.2] - 2026-10-21
 
 ### Changed
