@@ -42,7 +42,7 @@
 @font-face{font-family:'Exo 2';font-style:normal;font-weight:600 900;font-display:swap;src:url(fonts/Exo2-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Outfit';font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/Outfit-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
     </style>
-    <link rel="stylesheet" href="style.css?v=20261021k" />
+    <link rel="stylesheet" href="style.css?v=20261021l" />
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <link rel="stylesheet" href="optional/custom-cursor.css" />
     -->
@@ -56,16 +56,22 @@
       }
       .hero__title-line { display: block; white-space: nowrap; }
       /* careers heading on one line */
-      /* all section headings: centred (eyebrow label, title, intro) */
-      .section-head { text-align: center; margin-left: auto; margin-right: auto; }
-      .section-head .eyebrow { margin-left: auto; margin-right: auto; }
-      .section-head .section-sub { margin-left: auto; margin-right: auto; }
-      #careers .section-head { max-width: none; }
-      .pricing-v2 .section-head { text-align: center; }
-      .cp-header { display: grid; grid-template-columns: 1fr; gap: 20px; text-align: center; justify-items: center; }
-      .cp-header__left, .cp-header__right { text-align: center; }
-      .cp-header__right p { margin-left: auto; margin-right: auto; }
-      .cp-header__stats { justify-content: center; }
+      /* short, single-line section headings are centred (Careers, Deliverables, Pricing, FAQ);
+         longer headings keep the template's left alignment */
+      #careers .section-head,
+      .success-proof .section-head,
+      .pricing-v2 .section-head,
+      .faq .section-head { text-align: center; margin-left: auto; margin-right: auto; }
+      #careers .section-head,
+      .success-proof .section-head,
+      .faq .section-head { max-width: none; }
+      #careers .section-head .eyebrow,
+      .success-proof .section-head .eyebrow,
+      .pricing-v2 .section-head .eyebrow,
+      .faq .section-head .eyebrow,
+      #careers .section-head .section-sub,
+      .success-proof .section-head .section-sub,
+      .pricing-v2 .section-head .section-sub { margin-left: auto; margin-right: auto; }
       @media (min-width: 481px) { #careers .section-head .h2 { white-space: nowrap; font-size: min(44px, calc((100vw - 40px) / 21)); } }
       /* skills row: static, wrapped and centred (no scrolling) */
       .trust .trust__marquee { overflow: visible; -webkit-mask-image: none; mask-image: none; margin: 0 0 28px; padding: 4px 0; }
