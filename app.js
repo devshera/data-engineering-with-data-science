@@ -551,7 +551,11 @@ if (document.readyState === 'loading') {
 
 // Countdown timer — urgency section
 (function initCountdown() {
-  const TARGET = new Date('2026-06-09T09:00:00');
+  // Cohort start comes from data-cohort-date on #urgency-countdown (ISO, e.g. 2026-12-01T09:00:00).
+  // Left empty until dates are announced, in which case the countdowns stay hidden and nothing ticks.
+  const cdEl = document.getElementById('urgency-countdown');
+  const TARGET = new Date((cdEl && cdEl.dataset.cohortDate) || '');
+  if (isNaN(TARGET)) return;
   const pad = n => String(n).padStart(2, '0');
 
   // IDs for main urgency section + sticky footer bar
