@@ -12,6 +12,13 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.1] - 2026-10-21
+
+### Fixed
+- Trust strip: the scrolling marquee had lost its closing tags, so the stat cards and facts scrolled
+  past inside it, mixed with the skill chips. The marquee now holds only the chips (seamless loop) and the
+  stat cards, facts and CTA sit below it, static and centered.
+
 ## [1.5.0] - 2026-10-21
 
 Pre-launch QA: speed, bugs, security. Lighthouse (mobile, gzip enabled like cPanel): performance 99,

@@ -42,7 +42,7 @@
 @font-face{font-family:'Exo 2';font-style:normal;font-weight:600 900;font-display:swap;src:url(fonts/Exo2-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Outfit';font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/Outfit-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
     </style>
-    <link rel="stylesheet" href="style.css?v=20261021b" />
+    <link rel="stylesheet" href="style.css?v=20261021c" />
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <link rel="stylesheet" href="optional/custom-cursor.css" />
     -->
@@ -55,6 +55,9 @@
         .hero__inner { grid-template-columns: 1.4fr 1fr; }
       }
       .hero__title-line { display: block; white-space: nowrap; }
+      /* skills marquee: chips only, scrolling seamlessly (second set is a copy); stats sit below it */
+      .trust__track { padding-right: clamp(40px, 5vw, 72px); }
+      .trust__track .brand-logo { height: auto; font-weight: 700; font-size: 1.15rem; white-space: nowrap; }
       /* hero cards: stack in normal flow (staggered) so they can never overlap, whatever their content height */
       .hero__art { display: flex; flex-direction: column; justify-content: center; gap: 18px; min-height: 0; height: auto; align-self: center; }
       .hero__card { position: relative; top: auto; right: auto; bottom: auto; left: auto; }
@@ -683,7 +686,19 @@
 <span class="brand-logo">Reconciliation</span>
 <span class="brand-logo">Data Quality Checks</span>
 <span class="brand-logo">Data Dictionary</span>
-<div class="trust__ratings">
+<span class="brand-logo" aria-hidden="true">Microsoft Excel</span>
+<span class="brand-logo" aria-hidden="true">Power Query</span>
+<span class="brand-logo" aria-hidden="true">CSV Files</span>
+<span class="brand-logo" aria-hidden="true">Spreadsheet Sources</span>
+<span class="brand-logo" aria-hidden="true">Data Profiling</span>
+<span class="brand-logo" aria-hidden="true">Data Cleaning</span>
+<span class="brand-logo" aria-hidden="true">Merge &amp; Append</span>
+<span class="brand-logo" aria-hidden="true">Reconciliation</span>
+<span class="brand-logo" aria-hidden="true">Data Quality Checks</span>
+<span class="brand-logo" aria-hidden="true">Data Dictionary</span>
+            </div>
+          </div>
+          <div class="trust__ratings">
 <div class="rating-card" data-animate="scale-in" data-delay="0"><div class="rating-score">4<span> weeks</span></div><div class="rating-src">Certificate Section</div></div>
 <div class="rating-card" data-animate="scale-in" data-delay="80"><div class="rating-score">8<span> meetings</span></div><div class="rating-src">Live Instruction</div></div>
 <div class="rating-card" data-animate="scale-in" data-delay="160"><div class="rating-score">16–24<span> hrs</span></div><div class="rating-src">Live Hours</div></div>
