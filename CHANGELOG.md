@@ -12,6 +12,11 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.4] - 2026-10-21
+
+### Changed
+- Careers heading block ("Where It Applies" label + title) is center-aligned.
+
 ## [1.5.3] - 2026-10-21
 
 ### Changed
