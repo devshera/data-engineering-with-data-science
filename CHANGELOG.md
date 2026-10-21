@@ -12,6 +12,13 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.5] - 2026-10-21
+
+### Changed
+- All section headings (label, title, intro) are center-aligned, including Why Now, Transformation, Curriculum,
+  Skills, Learning, Community, Reviews, Deliverables, Hands-On Learning, Pricing and FAQ. Side-by-side copy
+  blocks (Guidance, Certificate) keep their left-aligned text next to their visual.
+
 ## [1.5.4] - 2026-10-21
 
 ### Changed
