@@ -9,11 +9,15 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 ## [Unreleased]
 
 ### Pending
-- GoHighLevel embed code for the new course (modal "Book a Call" and "Course Outline" forms
-  show a placeholder, see `data-ghl-slot` in `index.html`).
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 - Course-specific OG image (`og:image` still points at the base page's image).
+
+## [1.2.0] - 2026-10-21
+
+### Added
+- New GoHighLevel forms in both modals: "Data Engineering Foundation | Book a Call" and
+  "Data Engineering Foundation | Download PDF" (replaces the placeholder).
 
 ## [1.1.0] - 2026-10-21
 
