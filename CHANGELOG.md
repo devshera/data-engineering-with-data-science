@@ -12,6 +12,11 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.3.1] - 2026-10-21
+
+### Fixed
+- Skills & Tools grid: every row, including the shorter last row, is now centered.
+
 ## [1.3.0] - 2026-10-21
 
 ### Changed
