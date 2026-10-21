@@ -1,0 +1,9 @@
+# Sensitive config — never commit real credentials
+private/ghl-config.php
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+node_modules/
