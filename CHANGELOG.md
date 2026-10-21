@@ -12,6 +12,29 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.0] - 2026-10-21
+
+Pre-launch QA: speed, bugs, security. Lighthouse (mobile, gzip enabled like cPanel): performance 99,
+accessibility 98, best practices 100, SEO 100; FCP 1.1 s, LCP 2.0 s, TBT 0 ms, CLS 0; 158 KiB total.
+Before: performance 80 (FCP 3.6 s, LCP 3.7 s).
+
+### Changed
+- Fonts self-hosted (`fonts/`, latin subset, preloaded) instead of render-blocking Google Fonts.
+- Images re-encoded to WebP (tft-lms 1.37 MB to 56 KB, graduates and live-class photos about 60% smaller);
+  reviewer avatars now local instead of hot-linked from the WordPress site; width/height added to images.
+- GHL form iframes and `form_embed.js` load only when a form modal is first opened.
+- `style.css` / `app.js` URLs versioned (`?v=`) so the one-year immutable cache can't serve stale files.
+- HSTS no longer uses `includeSubDomains`; CSP no longer allows Google Fonts.
+- `.htaccess` also denies `.md`, `.json`, `.log`, `.sh` and `.sample.php` files.
+- Footer office headings are `h3` (heading order); nav logo `alt` emptied (text sits beside it).
+
+### Added
+- Course JSON-LD (name, description, provider, $1,000 offer).
+- `DEPLOY.md` upload checklist.
+
+### Removed
+- 25 unused images from the base page, the dead hero video/poster references (404s), and the unused `private/` folder.
+
 ## [1.4.0] - 2026-10-21
 
 ### Changed

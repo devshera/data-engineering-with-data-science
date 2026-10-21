@@ -8,16 +8,16 @@ Options -Indexes
   Header always set Referrer-Policy           "strict-origin-when-cross-origin"
   Header always set Permissions-Policy        "camera=(), microphone=(), geolocation=()"
   Header always set Cross-Origin-Resource-Policy "same-origin"
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set Strict-Transport-Security "max-age=31536000"
 
   # Content Security Policy
   # GHL forms: link.msgsndr.com (script) + api.leadconnectorhq.com (iframe + connect)
-  # Google Fonts: fonts.googleapis.com (style) + fonts.gstatic.com (font files)
+  # Fonts are self-hosted (fonts/*.woff2)
   Header always set Content-Security-Policy "\
 default-src 'self'; \
 script-src 'self' https://link.msgsndr.com; \
-style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
-font-src 'self' https://fonts.gstatic.com; \
+style-src 'self' 'unsafe-inline'; \
+font-src 'self'; \
 img-src 'self' data: https:; \
 media-src 'self'; \
 frame-src https://www.youtube.com https://api.leadconnectorhq.com; \
@@ -36,6 +36,11 @@ upgrade-insecure-requests"
   Require all denied
 </FilesMatch>
 
+# Never serve repo/dev files if they get uploaded by mistake
+<FilesMatch "(\.md|\.sample\.php|\.log|\.sh|\.json)$">
+  Require all denied
+</FilesMatch>
+
 # ── Force HTTPS ───────────────────────────────────────────────────────────────
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -51,6 +56,7 @@ upgrade-insecure-requests"
     text/javascript \
     application/javascript \
     application/json \
+    application/ld+json \
     text/xml \
     application/xml \
     image/svg+xml \

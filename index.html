@@ -21,19 +21,28 @@
       name="description"
       content="Four-week, instructor-led certificate in ETL and data preparation. Import, profile, clean, combine and validate spreadsheet and CSV data with Power Query, and build a refreshable, documented workflow."
     />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Certificate in Data Engineering Foundation",
+      "description": "Four-week, instructor-led certificate in ETL and data preparation: import, profile, clean, combine and validate spreadsheet and CSV data with Power Query, and build a refreshable, documented workflow.",
+      "provider": { "@type": "Organization", "name": "Transfotech Academy", "url": "https://transfotechacademy.com" },
+      "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "USD", "category": "Paid" }
+    }
+    </script>
     <link rel="canonical" href="https://transfotechacademy.com/certificate-in-data-engineering-foundation/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
     <link rel="dns-prefetch" href="https://link.msgsndr.com" />
-    <link rel="preload" as="image" href="images/hero-poster.jpg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/webp" href="images/data-engineering-foundation-og-200x200.webp" />
     <link rel="apple-touch-icon" href="images/data-engineering-foundation-apple-touch-icon.png" />
-    <link rel="stylesheet" href="style.css?v=20260614d" />
+    <link rel="preload" href="fonts/Exo2-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+@font-face{font-family:'Exo 2';font-style:normal;font-weight:600 900;font-display:swap;src:url(fonts/Exo2-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/Outfit-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+    </style>
+    <link rel="stylesheet" href="style.css?v=20261021b" />
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <link rel="stylesheet" href="optional/custom-cursor.css" />
     -->
@@ -75,9 +84,9 @@
     <header class="nav">
       <div class="container nav__inner">
         <a class="nav__logo" href="/">
-          <img
+          <img width="200" height="200"
             src="images/Transfotech-Favicon.jpg"
-            alt="Transfotech Academy"
+            alt=""
             class="logo-img"
           />
           <span class="logo-text">Transfotech Academy</span>
@@ -105,17 +114,6 @@
       <section class="hero">
         <!-- Video Background -->
         <div class="hero__video-wrap">
-          <video
-            class="hero__video"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="none"
-            poster="images/hero-poster.jpg"
-          >
-            <source src="videos/hero-bg.mp4" type="video/mp4" />
-          </video>
           <div class="hero__video-overlay"></div>
         </div>
         <canvas
@@ -1540,8 +1538,8 @@
         <div class="container">
           <div class="cp-showcase" data-animate="fade-up" data-delay="80">
             <div class="cp-showcase__img-wrap">
-              <img
-                src="images/cs-graduates.jpg"
+              <img width="1200" height="597" decoding="async"
+                src="images/cs-graduates.webp"
                 alt="Transfotech Academy learners"
                 loading="lazy"
               />
@@ -1573,8 +1571,8 @@
             <div class="cp-duo__card">
               <div class="cp-duo__num">01</div>
               <div class="cp-duo__img-wrap">
-                <img
-                  src="images/tft-cs-live-class.jpg"
+                <img width="1000" height="519" decoding="async"
+                  src="images/tft-cs-live-class.webp"
                   alt="Transfotech Academy live online class"
                   loading="lazy"
                 />
@@ -1650,8 +1648,8 @@
             <div class="cp-duo__card">
               <div class="cp-duo__num">02</div>
               <div class="cp-duo__img-wrap">
-                <img
-                  src="images/tft-lms.png"
+                <img width="1000" height="480" decoding="async"
+                  src="images/tft-lms.webp"
                   alt="Transfotech Academy learning platform"
                   loading="lazy"
                 />
@@ -1802,8 +1800,8 @@
                   </p>
                   <div class="story-card__head">
                     <div class="avatar avatar--photo">
-                      <img
-                        src="images/Atiqur-Rahman.png"
+                      <img width="96" height="96" decoding="async"
+                        src="images/Atiqur-Rahman.webp"
                         alt="Atiqur Rahman"
                         loading="lazy"
                       />
@@ -1853,8 +1851,8 @@
                   </p>
                   <div class="story-card__head">
                     <div class="avatar avatar--photo">
-                      <img
-                        src="https://transfotechacademy.com/wp-content/webp-express/webp-images/uploads/2023/03/unnamed-6.jpg.webp"
+                      <img width="96" height="96" decoding="async"
+                        src="images/Nahidul-Islam.webp"
                         alt="Nahidul Islam"
                         loading="lazy"
                       />
@@ -1903,8 +1901,8 @@
                   </p>
                   <div class="story-card__head">
                     <div class="avatar avatar--photo">
-                      <img
-                        src="https://transfotechacademy.com/wp-content/webp-express/webp-images/uploads/2023/03/unnamed-2.png.webp"
+                      <img width="96" height="96" decoding="async"
+                        src="images/Raven-Shepherd.webp"
                         alt="Raven Shepherd"
                         loading="lazy"
                       />
@@ -2245,7 +2243,7 @@
             <div class="cert-card">
               <div class="cert-watermark">✦</div>
               <div class="cert-header">
-                <img
+                <img width="200" height="200"
                   src="images/Transfotech-Favicon.jpg"
                   alt="Transfotech Academy"
                   class="logo-img"
@@ -2539,7 +2537,7 @@
         <div class="site-footer__top">
           <div class="site-footer__brand">
             <div class="site-footer__brand-row">
-              <img
+              <img width="200" height="200"
                 src="images/Transfotech-Favicon.jpg"
                 alt="Transfotech Academy"
                 class="logo-img"
@@ -2566,7 +2564,7 @@
           </div>
 
           <div class="site-footer__office">
-            <h4>NY Office</h4>
+            <h3>NY Office</h3>
             <p>
               Office No: 0905, 132 West 31st Street, 9th Floor,<br />
               New York, NY 10001
@@ -2575,13 +2573,13 @@
           </div>
 
           <div class="site-footer__office">
-            <h4>LA Office</h4>
+            <h3>LA Office</h3>
             <p>3717 W 3rd St 202A, Los Angeles, CA 90020</p>
             <p><a href="tel:+12139135080">+1 (213) 913-5080</a></p>
           </div>
 
           <div class="site-footer__hours">
-            <h4>Office Hours</h4>
+            <h3>Office Hours</h3>
             <p>9:00 AM – 5:00 PM EST</p>
             <div class="site-footer__socials" aria-label="Social links">
               <a
@@ -2775,7 +2773,7 @@
           <!-- Right: GHL form panel -->
           <div class="modal__form-panel">
             <iframe
-              src="https://api.leadconnectorhq.com/widget/form/QEV635AucHVkyYJbSPjq"
+              data-src="https://api.leadconnectorhq.com/widget/form/QEV635AucHVkyYJbSPjq"
               id="inline-QEV635AucHVkyYJbSPjq"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
@@ -2844,7 +2842,7 @@
           </aside>
           <div class="modal__form-panel">
             <iframe
-              src="https://api.leadconnectorhq.com/widget/form/HkddEIw823GvWoaYErwu"
+              data-src="https://api.leadconnectorhq.com/widget/form/HkddEIw823GvWoaYErwu"
               id="inline-HkddEIw823GvWoaYErwu"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
@@ -2868,10 +2866,10 @@
       </div>
     </div>
 
-    <script src="app.js" defer></script>
+    <script src="app.js?v=20261021a" defer></script>
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <script src="optional/custom-cursor.js" defer></script>
     -->
-    <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+    <!-- GHL form_embed.js is injected by app.js the first time a form modal opens (keeps ~MBs of third-party code off first load) -->
   </body>
 </html>

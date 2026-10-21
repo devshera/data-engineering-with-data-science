@@ -122,6 +122,20 @@
   let activeModal = null;
   let lastFocus   = null;
 
+  // GHL forms: load the embed script and the form iframes only when a modal is first opened
+  function loadGhlForms(modal) {
+    const frames = modal.querySelectorAll('iframe[data-src]');
+    if (!frames.length) return;
+    if (!window.__ghlEmbedLoaded) {
+      const sc = document.createElement('script');
+      sc.src = 'https://link.msgsndr.com/js/form_embed.js';
+      sc.async = true;
+      document.body.appendChild(sc);
+      window.__ghlEmbedLoaded = true;
+    }
+    frames.forEach(f => { f.src = f.dataset.src; f.removeAttribute('data-src'); });
+  }
+
   function openModal(modal, trigger) {
     if (activeModal) closeModal(activeModal);
     lastFocus = trigger || document.activeElement;
@@ -129,6 +143,7 @@
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-lock');
+    loadGhlForms(modal);
     const closeBtn = modal.querySelector('.modal__close');
     if (closeBtn) setTimeout(() => closeBtn.focus(), 50);
   }

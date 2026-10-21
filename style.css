@@ -2758,7 +2758,9 @@ body.modal-lock { overflow: hidden; }
   line-height: 1.5;
 }
 .site-footer__office h4,
-.site-footer__hours h4 {
+.site-footer__hours h4,
+.site-footer__office h3,
+.site-footer__hours h3 {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .12em;
