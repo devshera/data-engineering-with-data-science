@@ -43,6 +43,19 @@
         .hero__inner { grid-template-columns: 1.4fr 1fr; }
       }
       .hero__title-line { display: block; white-space: nowrap; }
+      /* hero cards: stack in normal flow (staggered) so they can never overlap, whatever their content height */
+      .hero__art { display: flex; flex-direction: column; justify-content: center; gap: 18px; min-height: 0; height: auto; align-self: center; }
+      .hero__card { position: relative; top: auto; right: auto; bottom: auto; left: auto; }
+      .hero__card--salary { width: 68%; align-self: flex-start; }
+      .hero__card--guarantee { width: 82%; align-self: flex-end; }
+      .hero__card--skills { width: 92%; align-self: center; border-radius: var(--radius); }
+      @media (max-width: 900px) { .hero__art { min-height: 0; } }
+      /* background illustration: fainter so fragments behind the cards do not read as clutter */
+      .hero__cyber-visual { opacity: 0.22; }
+      @media (max-width: 520px) {
+        .hero__card--salary, .hero__card--guarantee { width: 88%; }
+        .hero__card--skills { width: 100%; }
+      }
       /* skills & tools: wrap and centre every row, including a shorter last row */
       .skills__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
       .skills__grid .skill { flex: 0 0 calc((100% - 6 * 14px) / 7); min-width: 0; }

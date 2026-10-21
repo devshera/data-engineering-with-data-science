@@ -12,6 +12,13 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.3.5] - 2026-10-21
+
+### Fixed
+- Hero cards on the right no longer overlap: they stack in normal flow (staggered) instead of fixed
+  percentage positions, so the chip card cannot cover the "Refreshable ETL Project" card.
+- Background dashboard illustration dimmed so fragments behind the cards don't read as clutter.
+
 ## [1.3.4] - 2026-10-21
 
 ### Changed
