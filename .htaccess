@@ -12,16 +12,17 @@ Options -Indexes
 
   # Content Security Policy
   # GHL forms: link.msgsndr.com (script) + api.leadconnectorhq.com (iframe + connect)
+  # Cloudflare Web Analytics beacon (auto-injected by Cloudflare): static.cloudflareinsights.com + cloudflareinsights.com
   # Fonts are self-hosted (fonts/*.woff2)
   Header always set Content-Security-Policy "\
 default-src 'self'; \
-script-src 'self' https://link.msgsndr.com; \
+script-src 'self' https://link.msgsndr.com https://static.cloudflareinsights.com; \
 style-src 'self' 'unsafe-inline'; \
 font-src 'self'; \
 img-src 'self' data: https:; \
 media-src 'self'; \
 frame-src https://www.youtube.com https://api.leadconnectorhq.com; \
-connect-src 'self' https://api.leadconnectorhq.com https://link.msgsndr.com https://services.leadconnectorhq.com; \
+connect-src 'self' https://api.leadconnectorhq.com https://link.msgsndr.com https://services.leadconnectorhq.com https://cloudflareinsights.com; \
 form-action 'self' https://api.leadconnectorhq.com https://services.leadconnectorhq.com; \
 base-uri 'self'; \
 frame-ancestors 'self'; \

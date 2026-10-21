@@ -12,6 +12,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [1.5.7] - 2026-10-21
+
+### Fixed
+- Live QA: Cloudflare's auto-injected Web Analytics beacon was blocked by the CSP (console error, best-practices 93).
+  CSP now allows `static.cloudflareinsights.com` (script) and `cloudflareinsights.com` (connect).
+
 ## [1.5.6] - 2026-10-21
 
 ### Fixed
