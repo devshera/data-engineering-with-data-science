@@ -43,7 +43,7 @@
 @font-face{font-family:'Exo 2';font-style:normal;font-weight:600 900;font-display:swap;src:url(fonts/Exo2-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Outfit';font-style:normal;font-weight:300 900;font-display:swap;src:url(fonts/Outfit-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
     </style>
-    <link rel="stylesheet" href="style.min.css?v=20261024c" />
+    <link rel="stylesheet" href="style.min.css?v=20261024d" />
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <link rel="stylesheet" href="optional/custom-cursor.css" />
     -->
@@ -103,6 +103,41 @@
       #careers .outcomes-row { grid-template-columns: 1fr 1.5fr; gap: 24px; }
       #careers .outcomes-row span:last-child { text-align: left; font-weight: 600; }
       @media (max-width: 560px) { #careers .outcomes-row { grid-template-columns: 1fr; gap: 4px; } }
+      /* pricing: compact on desktop so the three cards fit a laptop screen without scrolling through them */
+      #pricing { scroll-margin-top: 92px; }
+      .pv2-card__head { display: flex; flex-direction: column-reverse; align-items: flex-start; }
+      .pv2-card__price .pv2-card__save { margin-left: auto; align-self: center; }
+      @media (min-width: 901px) {
+        .pricing-v2 { padding: 30px 0 36px; }
+        .pricing-v2 .container { max-width: 1240px; }
+        .pricing-v2 .section-head { margin-bottom: 16px; }
+        .pricing-v2 .section-head .eyebrow { margin-bottom: 6px; }
+        .pricing-v2 .section-head .h2 { font-size: clamp(26px, 2.4vw, 34px); margin-bottom: 4px; }
+        .pricing-v2 .section-head .section-sub { font-size: 14.5px; margin-bottom: 0; }
+        .pv2__grid { gap: 16px; }
+        .pv2-card { padding: 18px 20px 20px; border-radius: 18px; }
+        .pv2-card__ribbon { top: -12px; }
+        .pv2-card__head { flex-direction: row; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+        .pv2-card__head { flex-wrap: wrap; }
+        .pv2-card__head .pv2-card__badge { margin: 0; padding: 4px 9px; font-size: 9.5px; letter-spacing: 0.1em; }
+        .pv2-card__title { font-size: 18px; margin: 0; }
+        .pv2__grid > .pv2-card { min-width: 0; }
+        .pv2-card__price { margin-bottom: 2px; gap: 8px; }
+        .pv2-card__amount { font-size: 40px; }
+        .pv2-card__price .pv2-card__save { font-size: 11.5px; padding: 4px 9px; }
+        .pv2-card__price-meta { margin-bottom: 8px; min-height: 0; }
+        .pv2-card .pv2-card__price-meta--stack { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0 6px; }
+        .pv2-card__price-meta--stack .pv2-card__total-muted + .pv2-card__total-muted::before { content: "· "; }
+        .pv2-card__total-muted { font-size: 12.5px; line-height: 1.45; }
+        .pv2-card__features { gap: 6px; margin-bottom: 12px; min-height: 0; padding-top: 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .pv2-card__features li { font-size: 12.5px; line-height: 1.3; gap: 7px; letter-spacing: -0.005em; }
+        .pv2-check { width: 18px; height: 18px; flex: 0 0 18px; }
+        .pv2-card__cta { padding: 10px 18px; font-size: 14px; }
+      }
+      @media (min-width: 1100px) {
+        .pv2-card__head { flex-wrap: nowrap; }
+        .pv2-card__head .pv2-card__badge, .pv2-card__title, .pv2-card__price .pv2-card__save { white-space: nowrap; }
+      }
       /* pricing: stacked payment lines under the price, muted pill for the lowest-payment plan */
       .pv2-card__price-meta--stack { flex-direction: column; align-items: flex-start; gap: 2px; }
       .pv2-card__save--muted { background: rgba(255, 255, 255, 0.1); color: #d9c7ff; }
@@ -2267,30 +2302,24 @@
 
           <div class="pv2__grid">
             <article class="pv2-card" data-animate="fade-up" data-delay="0">
-              <span class="pv2-card__badge pv2-card__badge--muted">PAY IN FULL · BEST PRICE</span>
-              <h3 class="pv2-card__title">Done for Life</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount">$3,499</span></div>
+              <div class="pv2-card__head"><h3 class="pv2-card__title">Done for Life</h3><span class="pv2-card__badge pv2-card__badge--muted">PAY IN FULL · BEST PRICE</span></div>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$3,499</span><span class="pv2-card__save">Save $2,000 vs. Quick Starter</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">One-time payment</span><span class="pv2-card__total-muted">No monthly bills</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $2,000 vs. Quick Starter</span></div>
               <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
             <article class="pv2-card pv2-card--featured" data-animate="fade-up" data-delay="140">
               <span class="pv2-card__ribbon">RECOMMENDED</span>
-              <span class="pv2-card__badge pv2-card__badge--below">3-PAYMENT PLAN</span>
-              <h3 class="pv2-card__title">Best Value Pack</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount">$4,499</span></div>
+              <div class="pv2-card__head"><h3 class="pv2-card__title">Best Value Pack</h3><span class="pv2-card__badge pv2-card__badge--below">3-PAYMENT PLAN</span></div>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$4,499</span><span class="pv2-card__save">Save $1,000 vs. Quick Starter</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,499 today</span><span class="pv2-card__total-muted">then $1,500 / month × 2 months</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $1,000 vs. Quick Starter</span></div>
               <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--light" data-modal-open="book">Book a Call</button>
             </article>
             <article class="pv2-card" data-animate="fade-up" data-delay="280">
-              <span class="pv2-card__badge pv2-card__badge--muted">FLEXIBLE PLAN</span>
-              <h3 class="pv2-card__title">Quick Starter Pack</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount">$5,499</span></div>
+              <div class="pv2-card__head"><h3 class="pv2-card__title">Quick Starter Pack</h3><span class="pv2-card__badge pv2-card__badge--muted">FLEXIBLE PLAN</span></div>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$5,499</span><span class="pv2-card__save pv2-card__save--muted">Lowest monthly payment</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,099 today</span><span class="pv2-card__total-muted">then $1,100 / month × 4 months</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__save pv2-card__save--muted">Lowest monthly payment</span></div>
               <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
@@ -2931,7 +2960,7 @@
       </div>
     </div>
 
-    <script src="app.min.js?v=20261024c" defer></script>
+    <script src="app.min.js?v=20261024e" defer></script>
     <!-- Custom cursor (disabled by default; to restore see optional/README.md):
     <script src="optional/custom-cursor.js" defer></script>
     -->

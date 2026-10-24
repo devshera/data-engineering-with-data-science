@@ -5204,3 +5204,6 @@ button:focus-visible {
   .promo-bar__cta-full { display: none; }
   .promo-bar__cta-short { display: inline; }
 }
+
+/* sticky bottom bar steps aside while the packages section is on screen */
+.sticky-cta.is-over-pricing { opacity: 0; pointer-events: none; transform: translate(-50%, calc(100% + 40px)); visibility: hidden; }

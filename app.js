@@ -373,8 +373,10 @@
       const el = document.querySelector(id);
       if (!el) return;
       e.preventDefault();
-      const nav = document.querySelector('.nav');
-      const offset = nav ? nav.offsetHeight + 12 : 0;
+      // sticky offer bar + nav together; the compact packages section also discounts its own top padding
+      const bar = document.getElementById('site-topbar') || document.querySelector('.nav');
+      const pad = el.id === 'pricing' ? parseFloat(getComputedStyle(el).paddingTop) || 0 : 0;
+      const offset = bar ? Math.max(0, bar.offsetHeight + 12 - pad) : 0;
       const top = el.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: 'smooth' });
     });
@@ -604,4 +606,14 @@ if (document.readyState === 'loading') {
     bar.classList.add('is-dismissed');
     try { sessionStorage.setItem('ttPromoBarDismissed', '1'); } catch (e) {}
   });
+})();
+
+// Hide the sticky bottom bar while the packages section is in view, so it never covers the plan cards
+(function initStickyOverPricing() {
+  const pricing = document.getElementById('pricing');
+  const bar = document.getElementById('sticky-cta');
+  if (!pricing || !bar || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(entries => {
+    bar.classList.toggle('is-over-pricing', entries[0].isIntersecting);
+  }, { threshold: 0.05 }).observe(pricing);
 })();

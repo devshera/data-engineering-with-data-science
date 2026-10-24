@@ -19,6 +19,22 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.4] - 2026-10-24
+
+### Changed
+- Our Packages section is now compact on desktop so the three plan cards fit a laptop screen: section height
+  about 1150 px -> 590 px and card height 730 px -> 400 px at 1280 px and wider (entire section visible on a
+  1280x650 viewport). Plan label sits beside the plan name, the savings pill sits on the price line, payment details
+  are one line, benefit text is slightly smaller, and the cards use a wider container. Below 1100 px the labels may
+  wrap instead of staying on one line; mobile layout is unchanged.
+- The bottom sticky bar steps aside while the packages section is on screen, so it never covers the cards.
+
+### Fixed
+- In-page links (nav, buttons) scrolled to a target using only the nav height, ignoring the offer bar, so section
+  headings could sit under the pinned bar. They now use the full bar height; Our Packages lands with its heading
+  just below the bar.
+- `style.min.css` / `app.min.js` rebuilt; cache-busting bumped to 20261024d (CSS) and 20261024e (JS).
+
 ## [2.3.3] - 2026-10-24
 
 Pre-launch QA: page speed, accessibility, security and bug sweep.
