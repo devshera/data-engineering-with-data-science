@@ -19,6 +19,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.1] - 2026-10-24
+
+### Changed
+- Offer bar wording matches the Cybersecurity Analyst Program page: "Up to 30% Off Enrollment — Ends Oct 31, 2026"
+  (short: "30% Off — Ends Oct 31"), button "Claim Your Discount →", auto-hides after 2026-10-31 23:59:59.
+
 ## [2.3.0] - 2026-10-24
 
 Offer bar and sticky navigation brought in line with the Cybersecurity Analyst Program page.
