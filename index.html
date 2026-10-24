@@ -97,6 +97,8 @@
       @media (max-width: 1099px) { .skills__grid .skill { flex-basis: calc((100% - 3 * 14px) / 4); } }
       @media (max-width: 700px) { .skills__grid .skill { flex-basis: calc((100% - 2 * 14px) / 3); } }
       @media (max-width: 520px) { .skills__grid .skill { flex-basis: calc((100% - 14px) / 2); } }
+      /* hero: size to its content so there is no empty band between the nav and the copy */
+      .hero { min-height: 0; padding-top: clamp(40px, 6vh, 64px); padding-bottom: clamp(56px, 8vh, 80px); }
       /* careers tables carry sentence-length descriptions: left-align and give the second column more room */
       #careers .outcomes-row { grid-template-columns: 1fr 1.5fr; gap: 24px; }
       #careers .outcomes-row span:last-child { text-align: left; font-weight: 600; }

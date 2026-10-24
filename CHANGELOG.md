@@ -19,6 +19,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.2.2] - 2026-10-24
+
+### Fixed
+- Hero no longer forces full-screen height with vertically centred content, which left a ~200px empty band under
+  the nav on wide screens. It now sizes to its content with a smaller top padding.
+
 ## [2.2.1] - 2026-10-24
 
 ### Changed
