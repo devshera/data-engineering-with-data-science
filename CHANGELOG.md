@@ -19,6 +19,17 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.6] - 2026-10-24
+
+### Changed
+- Our Packages returns to the original card design from the reference screenshot (badge, plan name, price,
+  payment terms, savings pill and the full seven-benefit list in every card, with the "Every plan includes" panel
+  from 2.3.5 removed) and is sized to fit a laptop screen. Spacing is tightened (section about 1150 px -> 780 px,
+  card 730 px -> 560 px), the payment terms sit on one line, and on shorter windows (height 840 px and under) the
+  section scales down slightly (x0.92, x0.82, x0.72 at 760 px and 690 px) so all three plans stay in view.
+  Verified fully visible at 1894x894, 1536x730, 1440x800, 1366x650 and 1280x720 with the offer bar showing.
+  Mobile and tablet keep the standard stacked layout.
+
 ## [2.3.5] - 2026-10-24
 
 ### Changed

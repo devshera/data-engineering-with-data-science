@@ -103,27 +103,33 @@
       #careers .outcomes-row { grid-template-columns: 1fr 1.5fr; gap: 24px; }
       #careers .outcomes-row span:last-child { text-align: left; font-weight: 600; }
       @media (max-width: 560px) { #careers .outcomes-row { grid-template-columns: 1fr; gap: 4px; } }
-      /* packages: three plan cards + one shared "every plan includes" panel (benefits are identical across plans) */
+      /* packages: original card design (benefits in every card), spacing tuned so the section fits a laptop screen */
       #pricing { scroll-margin-top: 92px; }
       .pv2-card__head { display: flex; flex-direction: column-reverse; align-items: flex-start; }
-      .pv2-card__head .pv2-card__badge { margin: 0 0 14px; }
-      .pv2-card__cta { margin-top: 16px; }
-      .pv2-includes { margin: 24px auto 0; padding: 22px 34px 24px; background: rgba(255, 255, 255, 0.035); border: 1px solid rgba(255, 255, 255, 0.09); border-radius: 20px; }
-      .pv2-includes__title { margin: 0 0 16px; text-align: center; font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); }
-      .pv2-includes__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(4, auto); grid-auto-flow: column; gap: 12px 48px; }
-      .pv2-includes__list li { display: flex; align-items: flex-start; gap: 10px; color: rgba(255, 255, 255, 0.88); font-size: 14.5px; line-height: 1.4; }
+      .pv2-card__head .pv2-card__badge { margin: 0 0 12px; }
       @media (min-width: 901px) {
-        .pricing-v2 { padding: 40px 0 52px; }
-        .pricing-v2 .container { max-width: 1200px; }
-        .pricing-v2 .section-head { margin-bottom: 22px; }
-        .pv2-card { padding: 26px 30px 26px; }
-        .pv2-card__title { margin-bottom: 8px; }
-        .pv2-card__price-meta { margin-bottom: 12px; }
+        .pricing-v2 { padding: 28px 0 40px; }
+        .pricing-v2 .container { max-width: 1300px; }
+        .pricing-v2 .section-head { margin-bottom: 20px; }
+        .pricing-v2 .section-head .h2 { font-size: clamp(30px, 2.8vw, 38px); }
+        .pv2__grid { gap: 20px; }
+        .pv2-card { padding: 22px 28px 24px; }
+        .pv2-card__head .pv2-card__badge { margin-bottom: 10px; }
+        .pv2-card__title { margin-bottom: 6px; }
+        .pv2-card__price { margin-bottom: 4px; }
+        .pv2-card__amount { font-size: 50px; }
+        .pv2-card__price-meta { margin-bottom: 10px; min-height: 0; }
         .pv2-card__price-meta:not(.pv2-card__price-meta--stack) { margin-bottom: 2px; }
-        .pv2-card__amount { font-size: 54px; }
+        .pv2-card .pv2-card__price-meta--stack { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0 8px; }
+        .pv2-card .pv2-card__price-meta--stack .pv2-card__total-muted + .pv2-card__total-muted::before { content: "·"; margin-right: 8px; }
+        .pv2-card__features { gap: 8px; margin: 0 0 16px; padding-top: 13px; border-top: 1px solid rgba(255, 255, 255, 0.1); min-height: 0; }
+        .pv2-card__features li { font-size: 14px; line-height: 1.35; }
+        .pv2-card__cta { padding: 12px 20px; }
       }
-      @media (max-width: 800px) { .pv2-includes__list { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; } }
-      @media (max-width: 640px) { .pv2-includes { padding: 22px 20px 24px; } }
+      /* shorter laptop windows: scale the whole section down a little so the plans stay fully in view */
+      @media (min-width: 901px) and (max-height: 840px) { .pricing-v2 .container { zoom: 0.92; } }
+      @media (min-width: 901px) and (max-height: 760px) { .pricing-v2 .container { zoom: 0.82; } }
+      @media (min-width: 901px) and (max-height: 690px) { .pricing-v2 .container { zoom: 0.72; } }
       /* pricing: stacked payment lines under the price, muted pill for the lowest-payment plan */
       .pv2-card__price-meta--stack { flex-direction: column; align-items: flex-start; gap: 2px; }
       .pv2-card__save--muted { background: rgba(255, 255, 255, 0.1); color: #d9c7ff; }
@@ -2292,6 +2298,7 @@
               <div class="pv2-card__price"><span class="pv2-card__amount">$3,499</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">One-time payment</span><span class="pv2-card__total-muted">No monthly bills</span></div>
               <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $2,000 vs. Quick Starter</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
             <article class="pv2-card pv2-card--featured" data-animate="fade-up" data-delay="140">
@@ -2300,6 +2307,7 @@
               <div class="pv2-card__price"><span class="pv2-card__amount">$4,499</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,499 today</span><span class="pv2-card__total-muted">then $1,500 / month × 2 months</span></div>
               <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $1,000 vs. Quick Starter</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--light" data-modal-open="book">Book a Call</button>
             </article>
             <article class="pv2-card" data-animate="fade-up" data-delay="280">
@@ -2307,12 +2315,9 @@
               <div class="pv2-card__price"><span class="pv2-card__amount">$5,499</span></div>
               <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,099 today</span><span class="pv2-card__total-muted">then $1,100 / month × 4 months</span></div>
               <div class="pv2-card__price-meta"><span class="pv2-card__save pv2-card__save--muted">Lowest monthly payment</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
-          </div>
-          <div class="pv2-includes" data-animate="fade-up" data-delay="120">
-            <h3 class="pv2-includes__title">Every plan includes</h3>
-            <ul class="pv2-includes__list"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
           </div>
         </div>
       </section>
