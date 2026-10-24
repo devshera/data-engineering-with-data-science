@@ -19,6 +19,22 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.0] - 2026-10-24
+
+Offer bar and sticky navigation brought in line with the Cybersecurity Analyst Program page.
+
+### Added
+- Offer (promo) bar above the nav: "Limited Time — Save $2,000 when you pay in full — Cohort starts Nov 3, 2026"
+  with a "Claim Your Savings" button that opens the consultation modal, a short mobile variant, a dismiss button
+  (remembered for the session) and auto-hide after `data-expires` (2026-11-03). Bar and nav share a sticky
+  `.site-topbar` wrapper.
+- Bottom sticky bar sub-line now reads "Save $2,000 when you pay in full".
+
+### Fixed
+- The nav never actually stuck to the top: `html, body { overflow-x: hidden }` made body a scroll container.
+  It is now `overflow-x: clip` (hidden kept as fallback), so the top bar stays pinned while scrolling.
+- Bumped `style.css` / `app.js` cache-busting strings to 20261024a.
+
 ## [2.2.2] - 2026-10-24
 
 ### Fixed

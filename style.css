@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; overflow-x: hidden; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; overflow-x: clip; }
 
 :root {
   --bg: #120820;
@@ -5179,3 +5179,28 @@ button:focus-visible {
 .hero__copy { position: relative; z-index: 3; }
 .hero__art  { position: relative; z-index: 3; }
 
+
+/* ============================================================
+   SITE TOP BAR — offer (promo) bar + nav share one sticky wrapper
+   ============================================================ */
+.site-topbar { position: sticky; top: 0; z-index: 50; }
+.site-topbar .nav { position: relative; top: auto; }
+.promo-bar { position: relative; background: linear-gradient(90deg, #f4d21b 0, #f0a93a 50%, #f4d21b 100%); color: #241505; overflow: hidden; }
+.promo-bar.is-dismissed, .promo-bar[hidden] { display: none; }
+.promo-bar__inner { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; padding: 10px var(--gutter); text-align: center; }
+.promo-bar__text { font-size: 14px; font-weight: 600; letter-spacing: -.01em; }
+.promo-bar__text strong { font-weight: 800; }
+.promo-bar__cta-short, .promo-bar__text--short { display: none; }
+.promo-bar__badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; background: rgba(36,21,5,.85); color: #f4d21b; padding: 3px 9px; border-radius: 999px; margin-right: 8px; vertical-align: middle; }
+.promo-bar__cta { border: none; background: #241505; color: #ffe98a; font-weight: 700; font-size: 13px; padding: 7px 16px; border-radius: 999px; cursor: pointer; white-space: nowrap; transition: transform .15s, background .2s; }
+.promo-bar__cta:hover { background: #3a2408; transform: translateY(-1px); }
+.promo-bar__dismiss { position: absolute; right: 6px; top: 6px; border: none; background: none; color: rgba(36,21,5,.6); font-size: 20px; line-height: 1; cursor: pointer; padding: 6px 8px; }
+.promo-bar__dismiss:hover { color: #241505; }
+@media (max-width: 640px) {
+  .promo-bar__inner { flex-wrap: nowrap; justify-content: space-between; gap: 8px; padding: 8px 34px 8px var(--gutter); }
+  .promo-bar__text--full { display: none; }
+  .promo-bar__text--short { display: block; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .promo-bar__cta { flex-shrink: 0; padding: 6px 12px; font-size: 12px; }
+  .promo-bar__cta-full { display: none; }
+  .promo-bar__cta-short { display: inline; }
+}

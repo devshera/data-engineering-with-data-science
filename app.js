@@ -575,3 +575,19 @@ if (document.readyState === 'loading') {
   }, { threshold: 0.3 });
   observer.observe(fill);
 })();
+
+// Offer (promo) bar — hides itself after data-expires and remembers a dismissal for the session
+(function initPromoBar() {
+  const bar = document.getElementById('promo-bar');
+  const dismiss = document.getElementById('promo-bar-dismiss');
+  if (!bar) return;
+  const expires = bar.getAttribute('data-expires');
+  if (expires && Date.now() > new Date(expires).getTime()) { bar.remove(); return; }
+  let dismissed = false;
+  try { dismissed = sessionStorage.getItem('ttPromoBarDismissed') === '1'; } catch (e) {}
+  if (dismissed) { bar.classList.add('is-dismissed'); return; }
+  if (dismiss) dismiss.addEventListener('click', () => {
+    bar.classList.add('is-dismissed');
+    try { sessionStorage.setItem('ttPromoBarDismissed', '1'); } catch (e) {}
+  });
+})();
