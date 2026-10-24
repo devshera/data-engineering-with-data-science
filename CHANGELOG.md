@@ -21,6 +21,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
 
+## [2.0.1] - 2026-10-24
+
+### Changed
+- Social-share image (1200x630), favicon and apple-touch icon replaced with the supplied artwork for
+  "Data Engineering with Data Science". Canonical and og:url confirmed as /data-engineering-with-data-science/.
+
 ## [2.0.0] - 2026-10-24
 
 The course is now **Data Engineering with Data Science**, a 24-week bootcamp, replacing the four-week Certificate
