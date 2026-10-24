@@ -17,8 +17,14 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
   point there) and redirect the old `certificate-in-data-engineering-foundation/` URL to it if it was ever live.
 - Confirm the instructor line-up for the 24-week program (the PDF does not name one; Kris Jamsa is unchanged).
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
-- Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
-  `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
+- Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
+
+## [2.2.0] - 2026-10-24
+
+### Changed
+- Next cohort starts **3 November 2026**: enrollment badge, heading, sticky bar and fine print updated, and the
+  live countdown (main section and sticky bar) switched on via `data-cohort-date="2026-11-03T00:00:00"`
+  (counts down to midnight in each visitor's local time; set a start time if wanted).
 
 ## [2.1.0] - 2026-10-24
 
