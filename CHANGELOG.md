@@ -19,6 +19,12 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.7] - 2026-10-24
+
+### Changed
+- Our Packages section has more breathing room on desktop: padding 28 px / 40 px -> 64 px top / 72 px bottom. The
+  plans still fit the laptop viewports listed under 2.3.6 because anchor links already subtract the section padding.
+
 ## [2.3.6] - 2026-10-24
 
 ### Changed
