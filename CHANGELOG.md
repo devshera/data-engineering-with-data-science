@@ -19,6 +19,13 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.2] - 2026-10-24
+
+### Fixed
+- Offer bar now disappears the moment the deadline passes even if the page is already open (checked every second),
+  not only on the next page load. Verified with a 4-second test expiry: bar removed and header height drops from
+  118px to the 69px nav. `app.js` cache-busting bumped to 20261024b.
+
 ## [2.3.1] - 2026-10-24
 
 ### Changed

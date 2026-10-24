@@ -582,7 +582,14 @@ if (document.readyState === 'loading') {
   const dismiss = document.getElementById('promo-bar-dismiss');
   if (!bar) return;
   const expires = bar.getAttribute('data-expires');
-  if (expires && Date.now() > new Date(expires).getTime()) { bar.remove(); return; }
+  const expiry = expires ? new Date(expires).getTime() : NaN;
+  if (!isNaN(expiry)) {
+    if (Date.now() >= expiry) { bar.remove(); return; }
+    // also vanish while the page is open: check every second until the deadline passes
+    const timer = setInterval(() => {
+      if (Date.now() >= expiry) { clearInterval(timer); bar.remove(); }
+    }, 1000);
+  }
   let dismissed = false;
   try { dismissed = sessionStorage.getItem('ttPromoBarDismissed') === '1'; } catch (e) {}
   if (dismissed) { bar.classList.add('is-dismissed'); return; }
