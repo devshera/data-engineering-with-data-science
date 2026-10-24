@@ -3,39 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificate in Data Engineering Foundation | Transfotech Academy</title>
+    <title>Data Engineering with Data Science | Transfotech Academy</title>
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Transfotech Academy" />
-    <meta property="og:title" content="Certificate in Data Engineering Foundation | Transfotech Academy" />
-    <meta property="og:description" content="Four-week, instructor-led certificate in ETL and data preparation. Build a refreshable, documented Power Query workflow from spreadsheet and CSV data." />
-    <meta property="og:url" content="https://transfotechacademy.com/certificate-in-data-engineering-foundation/" />
+    <meta property="og:title" content="Data Engineering with Data Science | Transfotech Academy" />
+    <meta property="og:description" content="24-week, instructor-led bootcamp in Python, SQL, data engineering and machine learning. Six four-week certificate sections and an integrated capstone lead to the Professional Certificate in Data Engineering and Data Science." />
+    <meta property="og:url" content="https://transfotechacademy.com/data-engineering-with-data-science/" />
     <!-- JPG (not WebP) for WhatsApp/Facebook/LinkedIn preview compatibility; 1200x630 -->
-    <meta property="og:image" content="https://transfotechacademy.com/certificate-in-data-engineering-foundation/images/data-engineering-foundation-og.jpg" />
+    <meta property="og:image" content="https://transfotechacademy.com/data-engineering-with-data-science/images/data-engineering-with-data-science-og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:alt" content="Certificate in Data Engineering Foundation" />
+    <meta property="og:image:alt" content="Data Engineering with Data Science" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://transfotechacademy.com/certificate-in-data-engineering-foundation/images/data-engineering-foundation-og.jpg" />
+    <meta name="twitter:image" content="https://transfotechacademy.com/data-engineering-with-data-science/images/data-engineering-with-data-science-og.jpg" />
     <meta
       name="description"
-      content="Four-week, instructor-led certificate in ETL and data preparation. Import, profile, clean, combine and validate spreadsheet and CSV data with Power Query, and build a refreshable, documented workflow."
+      content="Build dependable data pipelines and use their outputs to answer business questions. A 24-week, instructor-led bootcamp: 12 weeks of data engineering followed by 12 weeks of data science, with six section certificates and an integrated capstone."
     />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "Certificate in Data Engineering Foundation",
-      "description": "Four-week, instructor-led certificate in ETL and data preparation: import, profile, clean, combine and validate spreadsheet and CSV data with Power Query, and build a refreshable, documented workflow.",
+      "name": "Data Engineering with Data Science",
+      "description": "24-week, instructor-led bootcamp: 12 weeks of data engineering followed by 12 weeks of data science. Six four-week certificate sections and an integrated capstone lead to the Professional Certificate in Data Engineering and Data Science.",
       "provider": { "@type": "Organization", "name": "Transfotech Academy", "url": "https://transfotechacademy.com" },
-      "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "USD", "category": "Paid" }
+      "educationalCredentialAwarded": "Professional Certificate in Data Engineering and Data Science"
     }
     </script>
-    <link rel="canonical" href="https://transfotechacademy.com/certificate-in-data-engineering-foundation/" />
+    <link rel="canonical" href="https://transfotechacademy.com/data-engineering-with-data-science/" />
     <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
     <link rel="dns-prefetch" href="https://link.msgsndr.com" />
-    <link rel="icon" type="image/webp" href="images/data-engineering-foundation-og-200x200.webp" />
-    <link rel="apple-touch-icon" href="images/data-engineering-foundation-apple-touch-icon.png" />
+    <link rel="icon" type="image/webp" href="images/data-engineering-with-data-science-og-200x200.webp" />
+    <link rel="apple-touch-icon" href="images/data-engineering-with-data-science-apple-touch-icon.png" />
     <link rel="preload" href="fonts/Exo2-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/Outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
     <style>
@@ -48,7 +48,7 @@
     -->
     <style>
       .modal__form-panel { padding: 0; overflow: hidden; }
-      /* hero title: two balanced lines ("Certificate in Data" / "Engineering Foundation") */
+      /* hero title: two balanced lines ("Data Engineering" / "with Data Science") */
       .hero .h1 { font-size: min(56px, calc((100vw - 44px) / 10.9)); line-height: 1.08; letter-spacing: -0.015em; }
       @media (min-width: 901px) {
         .hero .h1 { font-size: min(56px, 3.9vw); }
@@ -96,6 +96,12 @@
       @media (max-width: 1099px) { .skills__grid .skill { flex-basis: calc((100% - 3 * 14px) / 4); } }
       @media (max-width: 700px) { .skills__grid .skill { flex-basis: calc((100% - 2 * 14px) / 3); } }
       @media (max-width: 520px) { .skills__grid .skill { flex-basis: calc((100% - 14px) / 2); } }
+      /* careers tables carry sentence-length descriptions: left-align and give the second column more room */
+      #careers .outcomes-row { grid-template-columns: 1fr 1.5fr; gap: 24px; }
+      #careers .outcomes-row span:last-child { text-align: left; font-weight: 600; }
+      @media (max-width: 560px) { #careers .outcomes-row { grid-template-columns: 1fr; gap: 4px; } }
+      /* pricing: tuition not yet confirmed, so the amount is a short label rather than a figure */
+      .pv2-card__amount--tbc { font-size: 1.5rem; line-height: 1.2; white-space: nowrap; }
       /* two-card pricing (individual section + complete bootcamp) */
       @media (min-width: 901px) { .pv2__grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; margin-left: auto; margin-right: auto; } }
     </style>
@@ -475,7 +481,7 @@
             <!-- CSV → 126° from -90° to +36° -->
             <path d="M340,367 L340,325 A42,42 0 0,1 374,388 Z"
               fill="rgba(137,180,250,0.25)" stroke="#89b4fa" stroke-width="1.5"/>
-            <!-- Excel → 100.8° from +36° to +136.8° -->
+            <!-- JSON → 100.8° from +36° to +136.8° -->
             <path d="M340,367 L374,388 A42,42 0 0,1 310,392 Z"
               fill="rgba(127,203,174,0.25)" stroke="#7fcbae" stroke-width="1.5"/>
             <!-- Lookup → 79.2° from +136.8° to +216° -->
@@ -502,9 +508,9 @@
               <rect x="393" y="333" width="8" height="6" rx="1" fill="#89b4fa"/>
               <text x="405" y="339" fill="#89b4fa">CSV</text>
               <rect x="393" y="347" width="8" height="6" rx="1" fill="#7fcbae"/>
-              <text x="405" y="353" fill="#7fcbae">Excel</text>
+              <text x="405" y="353" fill="#7fcbae">JSON</text>
               <rect x="393" y="361" width="8" height="6" rx="1" fill="#b46ac9"/>
-              <text x="405" y="367" fill="#b46ac9">Lookup</text>
+              <text x="405" y="367" fill="#b46ac9">API</text>
               <rect x="393" y="375" width="8" height="6" rx="1" fill="#fab387"/>
               <text x="405" y="381" fill="#fab387">Other</text>
             </g>
@@ -512,7 +518,7 @@
             <!-- ═══ DATA PIPELINE STRIP ═══ -->
             <rect x="30" y="444" width="460" height="103" rx="8"
               fill="rgba(8,20,32,0.65)" stroke="rgba(127,203,174,0.14)" stroke-width="0.8"/>
-            <text x="44" y="460" font-family="monospace" font-size="8.5" fill="#7fcbae" opacity="0.8">ETL Pipeline</text>
+            <text x="44" y="460" font-family="monospace" font-size="8.5" fill="#7fcbae" opacity="0.8">Data Pipeline</text>
 
             <!-- Stage 1: Raw Data -->
             <rect x="42" y="466" width="110" height="70" rx="6"
@@ -535,10 +541,10 @@
               <animateMotion dur="1.3s" repeatCount="indefinite" path="M153,501 L203,501"/>
             </circle>
 
-            <!-- Stage 2: Power Query -->
+            <!-- Stage 2: SQL + dbt -->
             <rect x="205" y="466" width="110" height="70" rx="6"
               fill="rgba(127,203,174,0.07)" stroke="#7fcbae" stroke-width="1"/>
-            <text x="260" y="481" font-family="monospace" font-size="7.5" fill="#7fcbae" text-anchor="middle">Power Query</text>
+            <text x="260" y="481" font-family="monospace" font-size="7.5" fill="#7fcbae" text-anchor="middle">SQL + dbt</text>
             <!-- Mini neural net: 3 input / 4 hidden / 2 output nodes -->
             <g stroke="#7fcbae" stroke-width="0.5" opacity="0.22">
               <line x1="224" y1="494" x2="258" y2="490"/>
@@ -612,12 +618,12 @@
 
         <div class="container hero__inner">
           <div class="hero__copy" data-animate="fade-up">
-            <span class="eyebrow">Four-Week Certificate · Instructor-Led</span>
+            <span class="eyebrow">24-Week Bootcamp · Instructor-Led</span>
             <h1 class="h1">
-              <span class="hero__title-line">Certificate in Data</span> <span class="hero__title-line"><span class="accent-underline">Engineering Foundation</span></span>
+              <span class="hero__title-line">Data Engineering</span> <span class="hero__title-line"><span class="accent-underline">with Data Science</span></span>
             </h1>
             <p class="lead">
-              Build practical data preparation and ETL skills to transform raw files into reliable, analysis-ready data. Learn to import, profile, clean, standardize, combine and validate data using Excel-based workflows and Power Query.
+              Build dependable data pipelines and use their outputs to answer business questions. Develop practical Python, SQL, data engineering and machine learning skills through live classes and applied projects.
             </p>
             <div class="hero__ctas">
               <button
@@ -632,13 +638,13 @@
 
             <ul class="hero__stats">
               <li>
-                <strong>4 Weeks</strong> <span>Instructor-Led Certificate</span>
+                <strong>24 Weeks</strong> <span>Engineering + Data Science</span>
               </li>
               <li>
-                <strong>8 Live Meetings</strong> <span>16–24 Live Hours</span>
+                <strong>48 Live Meetings</strong> <span>96–144 Live Hours</span>
               </li>
               <li>
-                <strong>$1,000</strong> <span>Individual Tuition</span>
+                <strong>6 Certificates</strong> <span>Plus a Professional Certificate</span>
               </li>
             </ul>
           </div>
@@ -649,7 +655,7 @@
                 <span class="dot dot--green"></span>
                 Data prepared
               </div>
-              <div class="big-num">16–24 Hours</div> <div class="muted">Live Instruction · 8 Meetings</div>
+              <div class="big-num">96–144 Hours</div> <div class="muted">Live Instruction · 48 Meetings</div>
             </div>
 
             <div class="hero__card hero__card--guarantee">
@@ -667,15 +673,15 @@
                   />
                   <path d="M9 12l2 2 4-4" />
                 </svg>
-                Refreshable ETL Project
+                Integrated Capstone
               </div>
               <p>
-                A refreshable ETL workflow with data dictionary, process map, reconciliation checks and exception report.
+                One connected business case, from a tested data refresh to a checked model or forecast, with a runbook, model card and monitoring plan.
               </p>
             </div>
 
             <div class="hero__card hero__card--skills">
-              <div class="chip-row"><span class="chip">Microsoft Excel</span><span class="chip">Power Query</span><span class="chip">CSV Files</span><span class="chip">ETL</span><span class="chip">Data Profiling</span><span class="chip">Data Cleaning</span><span class="chip">Data Quality Checks</span><span class="chip">Data Dictionary</span><span class="chip">Reconciliation</span><span class="chip">Documentation</span></div>
+              <div class="chip-row"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SQL</span><span class="chip">dbt</span><span class="chip">Workflow Orchestration</span><span class="chip">Cloud Storage</span><span class="chip">scikit-learn</span><span class="chip">Git</span><span class="chip">Forecasting</span><span class="chip">Model Delivery</span></div>
             </div>
           </div>
         </div>
@@ -685,7 +691,7 @@
       <section class="trust">
         <div class="container">
           <p class="trust__title" data-animate="fade-up">
-            The tools and checks behind dependable, analysis-ready data
+            The tools and checks behind dependable data and decisions
           </p>
         </div>
         <div
@@ -695,30 +701,32 @@
         >
           <div class="trust__marquee" aria-label="Skills covered">
             <div class="trust__track" id="trustTrack">
-<span class="brand-logo">Microsoft Excel</span>
-<span class="brand-logo">Power Query</span>
-<span class="brand-logo">CSV Files</span>
-<span class="brand-logo">Spreadsheet Sources</span>
-<span class="brand-logo">Data Profiling</span>
-<span class="brand-logo">Data Cleaning</span>
-<span class="brand-logo">Merge &amp; Append</span>
-<span class="brand-logo">Reconciliation</span>
-<span class="brand-logo">Data Quality Checks</span>
-<span class="brand-logo">Data Dictionary</span>
+<span class="brand-logo">Python</span>
+<span class="brand-logo">pandas</span>
+<span class="brand-logo">SQL</span>
+<span class="brand-logo">Data Modeling</span>
+<span class="brand-logo">ETL &amp; ELT</span>
+<span class="brand-logo">dbt</span>
+<span class="brand-logo">Workflow Orchestration</span>
+<span class="brand-logo">Cloud Storage</span>
+<span class="brand-logo">scikit-learn</span>
+<span class="brand-logo">Time Series</span>
+<span class="brand-logo">Model Delivery</span>
+<span class="brand-logo">Git</span>
             </div>
           </div>
           <div class="trust__ratings">
-<div class="rating-card" data-animate="scale-in" data-delay="0"><div class="rating-score">4<span> weeks</span></div><div class="rating-src">Certificate Section</div></div>
-<div class="rating-card" data-animate="scale-in" data-delay="80"><div class="rating-score">8<span> meetings</span></div><div class="rating-src">Live Instruction</div></div>
-<div class="rating-card" data-animate="scale-in" data-delay="160"><div class="rating-score">16–24<span> hrs</span></div><div class="rating-src">Live Hours</div></div>
-<div class="rating-card" data-animate="scale-in" data-delay="240"><div class="rating-score">$1,000</div><div class="rating-src">Individual Tuition</div></div>
+<div class="rating-card" data-animate="scale-in" data-delay="0"><div class="rating-score">24<span> weeks</span></div><div class="rating-src">Program Length</div></div>
+<div class="rating-card" data-animate="scale-in" data-delay="80"><div class="rating-score">48<span> meetings</span></div><div class="rating-src">Live Instruction</div></div>
+<div class="rating-card" data-animate="scale-in" data-delay="160"><div class="rating-score">96–144<span> hrs</span></div><div class="rating-src">Live Hours</div></div>
+<div class="rating-card" data-animate="scale-in" data-delay="240"><div class="rating-score">6</div><div class="rating-src">Section Certificates</div></div>
 </div>
 <ul class="authority-strip" data-animate="fade-up" data-delay="200">
 <li><span class="auth-ico">🧑‍🏫</span> Instructor-led live classes</li>
-<li><span class="auth-ico">📄</span> Spreadsheet &amp; CSV sources</li>
-<li><span class="auth-ico">🚫</span> No prior SQL required</li>
-<li><span class="auth-ico">🎓</span> Also part of the 16-week bootcamp</li>
-<li><span class="auth-ico">✅</span> Certificate after requirements are met</li>
+<li><span class="auth-ico">🐍</span> Starts with Python from scratch</li>
+<li><span class="auth-ico">🚪</span> Enter any of six four-week sections</li>
+<li><span class="auth-ico">🎓</span> Professional Certificate after all six and the capstone</li>
+<li><span class="auth-ico">✅</span> Certificates after requirements are met</li>
 </ul>
           <div class="trust__cta" data-animate="fade-up" data-delay="260">
             <button type="button" class="btn btn--ghost" data-modal-open="book">
@@ -728,30 +736,30 @@
         </div>
       </section>
 
-      <!-- 3b. WHY CYBERSECURITY -->
+      <!-- 3b. WHY NOW -->
       <section class="why-cyber" id="why-cyber">
         <div class="container">
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">Why Now</span>
             <h2 class="h2">
-              Better decisions start with <span class="accent-underline">data you can trust</span>.
+              Dependable pipelines first. <span class="accent-underline">Better answers</span> next.
             </h2>
             <p class="section-sub">
-              Reports and dashboards are only as dependable as the data behind them. This four-week section teaches the preparation, quality checking and documentation work that makes data reliable enough to analyze.
+              The first 12 weeks focus on preparing, storing and delivering reliable data. The next 12 weeks use that foundation for statistical analysis, predictive modeling and model delivery.
             </p>
           </header>
 
           <p class="why-cyber__label" data-animate="fade-up" data-delay="80">
-            The course at a glance:
+            The program at a glance:
           </p>
 
           <div class="why-cyber__grid">
-<div class="why-stat" data-animate="fade-up" data-delay="0"><div class="why-stat__ico">📅</div><strong>4 weeks</strong><span>of instructor-led learning in a structured certificate section</span></div>
-<div class="why-stat" data-animate="fade-up" data-delay="80"><div class="why-stat__ico">🎥</div><strong>8 live meetings</strong><span>twice each week, 2 to 3 hours per meeting</span></div>
-<div class="why-stat" data-animate="fade-up" data-delay="160"><div class="why-stat__ico">⏱️</div><strong>16–24 live hours</strong><span>plus a recommended 3 to 5 hours of independent practice each week</span></div>
-<div class="why-stat" data-animate="fade-up" data-delay="240"><div class="why-stat__ico">🔧</div><strong>Power Query</strong><span>repeatable, refreshable workflows for spreadsheet and CSV data</span></div>
-<div class="why-stat" data-animate="fade-up" data-delay="320"><div class="why-stat__ico">✅</div><strong>4 quality checks</strong><span>completeness, validity, consistency and uniqueness</span></div>
-<div class="why-stat" data-animate="fade-up" data-delay="400"><div class="why-stat__ico">🚫</div><strong>No SQL required</strong><span>exercises use file-based sources; basic Excel comfort is enough</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="0"><div class="why-stat__ico">📅</div><strong>24 weeks</strong><span>12 weeks of data engineering followed by 12 weeks of data science</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="80"><div class="why-stat__ico">🎥</div><strong>48 live meetings</strong><span>twice each week, 2 to 3 hours per meeting</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="160"><div class="why-stat__ico">⏱️</div><strong>96–144 live hours</strong><span>plus a recommended 6 to 8 hours of independent practice each week</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="240"><div class="why-stat__ico">🎓</div><strong>6 certificates</strong><span>six consecutive four-week sections, each with its own certificate</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="320"><div class="why-stat__ico">🏪</div><strong>1 connected case</strong><span>a regional retailer working to reduce late deliveries and improve stock planning</span></div>
+<div class="why-stat" data-animate="fade-up" data-delay="400"><div class="why-stat__ico">🚀</div><strong>1 integrated capstone</strong><span>a new data batch flows through your pipeline to a checked model or forecast</span></div>
 </div>
 <blockquote
             class="why-cyber__quote"
@@ -762,7 +770,7 @@
               "A number is only useful if you can explain where it came from."
             </p>
             <p class="why-cyber__sub">
-              Learn to document your sources, rules and checks so a colleague can rerun and verify your work.
+              Learn to document your sources, rules, checks and models so a colleague can rerun and verify your work.
             </p>
           </blockquote>
 
@@ -784,44 +792,36 @@
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">Your Transformation</span>
             <h2 class="h2">
-              From "I clean data by hand" → "I built <span style="white-space: nowrap">a <span class="accent-underline">refreshable ETL workflow</span>."</span>
+              From "I clean data by hand" → "I delivered <span style="white-space: nowrap">a <span class="accent-underline">tested pipeline and a checked model</span>."</span>
             </h2>
             <p class="section-sub">
-              Move from one-off fixes to repeatable, documented data preparation.
+              Move from one-off fixes to repeatable, documented data work, and from guesses to evidence.
             </p>
           </header>
 
           <div class="transform__table" data-animate="fade-up" data-delay="100">
             <div class="transform__row transform__row--head">
               <div class="transform__cell transform__cell--before">
-                BEFORE the course
+                BEFORE the program
               </div>
               <div class="transform__cell transform__cell--after">
-                AFTER the course
+                AFTER the program
               </div>
             </div>
             <div class="transform__row">
               <div class="transform__cell transform__cell--before">
-                Fixing the same spreadsheets by hand every period
+                Fixing the same files by hand every period
               </div>
               <div class="transform__cell transform__cell--after">
-                A Power Query workflow you can refresh
+                A tested, orchestrated refresh you can rerun
               </div>
             </div>
             <div class="transform__row">
               <div class="transform__cell transform__cell--before">
-                Unsure what is inside a source file
+                Unsure what is inside a source or how tables relate
               </div>
               <div class="transform__cell transform__cell--after">
-                Sources profiled: row counts, data types, missing values
-              </div>
-            </div>
-            <div class="transform__row">
-              <div class="transform__cell transform__cell--before">
-                Inconsistent values and duplicate records
-              </div>
-              <div class="transform__cell transform__cell--after">
-                Values standardized using documented rules
+                Sources profiled and modeled with defined grain, keys and dbt tests
               </div>
             </div>
             <div class="transform__row">
@@ -829,15 +829,23 @@
                 Totals that do not match
               </div>
               <div class="transform__cell transform__cell--after">
-                Input and output totals reconciled
+                Pandas and SQL results reconciled, with exceptions recorded
               </div>
             </div>
             <div class="transform__row">
               <div class="transform__cell transform__cell--before">
-                Unclear where a number came from
+                "Does the model beat a simple baseline?"
               </div>
               <div class="transform__cell transform__cell--after">
-                A data dictionary and a source-to-output process map
+                Baselines, proper data splits and honest evaluation
+              </div>
+            </div>
+            <div class="transform__row">
+              <div class="transform__cell transform__cell--before">
+                Unclear when a prediction should not be used
+              </div>
+              <div class="transform__cell transform__cell--after">
+                A model card stating intended use, limits and monitoring
               </div>
             </div>
             <div class="transform__row">
@@ -845,7 +853,7 @@
                 "Can anyone else rerun this?"
               </div>
               <div class="transform__cell transform__cell--after">
-                Rerun and handoff instructions a colleague can follow
+                A runbook and handoff another person can follow
               </div>
             </div>
           </div>
@@ -871,7 +879,7 @@
               Learn from a <span class="accent-underline">Data Architect &amp; Engineer</span>
             </h2>
             <p class="section-sub">
-              Your instructor has led the design and delivery of cloud data platforms and data pipelines. Every lesson is built around practical, repeatable data work.
+              Your instructor has led the design and delivery of cloud data platforms and data pipelines. Every lesson is built around practical, repeatable data work, from the first Python script to a delivered model.
             </p>
           </header>
           <div class="icard-grid icard-grid--single">
@@ -913,10 +921,10 @@
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">Curriculum</span>
             <h2 class="h2">
-              6 topic areas. <span class="accent-underline">1 refreshable ETL project</span>. Reliable data from week one.
+              6 certificates. <span class="accent-underline">1 integrated capstone</span>. Reliable data to working models.
             </h2>
             <p class="section-sub">
-              A structured, four-week certificate section covering the practical ETL skills behind dependable data. Learn through demonstrations, guided practice, business cases and feedback, and finish with a documented, refreshable workflow. These topic areas summarize the section and are not a class-by-class syllabus.
+              Six consecutive four-week sections, each with 8 live meetings and 16 to 24 live instructional hours. Weeks 1 to 12 cover data engineering; weeks 13 to 24 use that foundation for statistical analysis, predictive modeling and model delivery. Learners may complete the full sequence or enter an individual section after demonstrating its prerequisites.
             </p>
           </header>
 
@@ -925,123 +933,135 @@
             data-animate="fade-up"
             data-delay="150"
           >
-            <aside class="curriculum__nav" aria-label="Curriculum topics">
-<button type="button" class="cmod is-active" data-mod="1"><span class="cmod__num">01</span><span class="cmod__title">Sources &amp; ETL</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
-<button type="button" class="cmod" data-mod="2"><span class="cmod__num">02</span><span class="cmod__title">Power Query</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
-<button type="button" class="cmod" data-mod="3"><span class="cmod__num">03</span><span class="cmod__title">Cleaning</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
-<button type="button" class="cmod" data-mod="4"><span class="cmod__num">04</span><span class="cmod__title">Merge &amp; Reconcile</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
-<button type="button" class="cmod" data-mod="5"><span class="cmod__num">05</span><span class="cmod__title">Quality &amp; Docs</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
-<button type="button" class="cmod" data-mod="6"><span class="cmod__num">06</span><span class="cmod__title">Refresh &amp; Handoff</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+            <aside class="curriculum__nav" aria-label="Curriculum sections">
+<button type="button" class="cmod is-active" data-mod="1"><span class="cmod__num">01</span><span class="cmod__title">Python, pandas &amp; SQL</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+<button type="button" class="cmod" data-mod="2"><span class="cmod__num">02</span><span class="cmod__title">Data Modeling &amp; ETL</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+<button type="button" class="cmod" data-mod="3"><span class="cmod__num">03</span><span class="cmod__title">Warehousing &amp; Cloud</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+<button type="button" class="cmod" data-mod="4"><span class="cmod__num">04</span><span class="cmod__title">Statistics &amp; Regression</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+<button type="button" class="cmod" data-mod="5"><span class="cmod__num">05</span><span class="cmod__title">Classification &amp; Segmentation</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
+<button type="button" class="cmod" data-mod="6"><span class="cmod__num">06</span><span class="cmod__title">Forecasting &amp; Delivery</span><span class="cmod__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18" /></svg></span></button>
 </aside>
 <div class="curriculum__panels">
 <article class="cpanel is-active" data-panel="1">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 01 · Sources &amp; ETL</span>
-                  <h3>Data Sources, Profiling &amp; the ETL Lifecycle</h3>
-                  <em class="cpanel__hook">Know your data before you change it.</em>
+                  <span class="cpanel__badge">Certificate 01 · Weeks 1 to 4</span>
+                  <h3>Certificate in Python pandas and SQL Foundations</h3>
+                  <em class="cpanel__hook">Data engineering foundation. Answer the same question twice, then reconcile.</em>
                 </div>
-                <p class="cpanel__body">Start with the data lifecycle, a source inventory and a process map of how data moves from source to output. Profile spreadsheet and CSV files, including row counts, data types and missing values, so you understand what each field means and where it came from.</p>
+                <p class="cpanel__body">This section builds the programming and querying foundation for the rest of the bootcamp. Week 1 introduces Python variables, selections, loops, functions, lists, dictionaries and basic debugging. Week 2 is devoted to pandas DataFrames: reading files, inspecting columns, handling missing values, selecting records, combining tables and calculating grouped summaries.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Data lifecycle and source inventory</li><li>Process mapping from source to prepared output</li><li>Extract, transform and load (ETL) concepts</li><li>Profiling row counts, data types and missing values</li><li>Understanding what each field means and where it came from</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Translate a short requirement into pseudocode and a small Python function.</li><li>Use selections, loops and collections, and diagnose common logic errors.</li><li>Read, clean, filter, combine and summarize tabular data with pandas.</li><li>Write SQL queries with filters, aggregates and appropriate joins.</li><li>Use an introductory CTE or window function for a defined analytical question.</li><li>Reconcile outputs and explain missing values, duplicates and assumptions.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Microsoft Excel</li><li>Spreadsheet and CSV source files</li><li>Business brief and starter files</li><li>Source inventory and profiling checks</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 1 · Meeting one:</strong> Introduction to Python: variables, types, conditions and basic collections</li><li><strong>Week 1 · Meeting two:</strong> Loops, functions, file handling and debugging a small program</li><li><strong>Week 2 · Meeting one:</strong> pandas DataFrames: import, inspection, types and missing values</li><li><strong>Week 2 · Meeting two:</strong> Filtering, joins, grouping, derived columns and result checks</li><li><strong>Week 3 · Meeting one:</strong> SQL fundamentals: tables, keys, SELECT, filtering and sorting</li><li><strong>Week 3 · Meeting two:</strong> Aggregates, GROUP BY, nulls and joining related tables</li><li><strong>Week 4 · Meeting one:</strong> SQL for analytics: CTEs, introductory windows and business measures</li><li><strong>Week 4 · Meeting two:</strong> Python and SQL project review, reconciliation and certificate assessment</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>ETL</span><span>Data Lifecycle</span><span>Data Profiling</span><span>Process Mapping</span><span>CSV</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> A reproducible pandas notebook and SQL query collection answering a business brief. Submissions include source data, expected result checks, a short data dictionary and a README explaining how to rerun the work.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> Basic computer and file-management skills, arithmetic and introductory algebra. Prior Python or SQL is not required. Complete the environment setup and short programming readiness exercises before the first class.</p>
+                <div class="cpanel__tags"><span>Python</span><span>pandas</span><span>SQL</span><span>CTEs &amp; Windows</span><span>Reconciliation</span></div></article>
 <article class="cpanel" data-panel="2">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 02 · Power Query</span>
-                  <h3>Data Import &amp; Repeatable Power Query Workflows</h3>
-                  <em class="cpanel__hook">Build steps you can run again.</em>
+                  <span class="cpanel__badge">Certificate 02 · Weeks 5 to 8</span>
+                  <h3>Certificate in Data Modeling and ETL</h3>
+                  <em class="cpanel__hook">Data engineering development. Turn separate files into a controlled workflow.</em>
                 </div>
-                <p class="cpanel__body">Import spreadsheet and CSV data into Power Query and record each preparation step so the workflow can be repeated. Required exercises use file-based sources, so this section can be completed before learning SQL.</p>
+                <p class="cpanel__body">This section turns separate files and application data into a controlled preparation workflow. Learners design small relational models, identify keys and table grain, and distinguish transactional structures from analytical structures. They ingest CSV and JSON files and practice reading an application programming interface, or API, using a supplied classroom service and saved responses.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Importing spreadsheet and CSV files</li><li>Building repeatable Power Query steps</li><li>Correcting data types</li><li>Keeping every transformation in a refreshable query</li><li>File-based exercises that require no SQL</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Define table grain, keys, relationships and a source-to-target mapping.</li><li>Ingest files and a paginated API response using Python.</li><li>Apply consistent data types, cleaning rules and duplicate handling.</li><li>Implement a small incremental load with documented update rules.</li><li>Test completeness, validity, uniqueness and referential integrity.</li><li>Document exceptions, lineage, access needs and safe rerun behavior.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Excel with Power Query</li><li>Spreadsheet files</li><li>CSV files</li><li>Source files supplied to individual enrollees</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 5 · Meeting one:</strong> Database design: grain, keys, relationships and normalization</li><li><strong>Week 5 · Meeting two:</strong> Analytical modeling, fact and dimension concepts and source mapping</li><li><strong>Week 6 · Meeting one:</strong> File ingestion: CSV, JSON, schemas and error handling</li><li><strong>Week 6 · Meeting two:</strong> API ingestion: pagination, credentials, retries and saved responses</li><li><strong>Week 7 · Meeting one:</strong> ETL and ELT: staging, transformations and repeatable loading</li><li><strong>Week 7 · Meeting two:</strong> Incremental updates, duplicates, late records and rerun behavior</li><li><strong>Week 8 · Meeting one:</strong> Data quality tests, lineage, ownership and access rules</li><li><strong>Week 8 · Meeting two:</strong> Pipeline demonstration, exception review and certificate assessment</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>Power Query</span><span>Import</span><span>Data Types</span><span>Repeatable Workflows</span><span>No SQL Needed</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> A repeatable Python and SQL workflow that ingests multiple sources, loads modeled tables and generates a quality report. Evidence includes a schema diagram, versioned transformations, a rejected-record file, reconciliation totals and a rerun test.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> The first certificate or equivalent Python, pandas and SQL skills. Individual enrollees complete a readiness task involving a join, a grouped summary and a small Python transformation, then receive the project brief and starting data.</p>
+                <div class="cpanel__tags"><span>Data Modeling</span><span>ETL &amp; ELT</span><span>API Ingestion</span><span>Data Quality</span><span>Git</span></div></article>
 <article class="cpanel" data-panel="3">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 03 · Cleaning</span>
-                  <h3>Cleaning, Standardization &amp; Transformation Documentation</h3>
-                  <em class="cpanel__hook">Fix it once, and write down how.</em>
+                  <span class="cpanel__badge">Certificate 03 · Weeks 9 to 12</span>
+                  <h3>Certificate in Data Warehousing and Cloud Pipelines</h3>
+                  <em class="cpanel__hook">Data engineering capstone. Make the refresh repeatable, then hand it off.</em>
                 </div>
-                <p class="cpanel__body">Standardize values and handle duplicates or missing records using documented rules. Every change to the data is recorded so others can see what was changed and why.</p>
+                <p class="cpanel__body">This section organizes prepared data into a small analytical warehouse and makes its refresh repeatable. Learners build fact and dimension models and use dbt to organize SQL transformations, tests and documentation. Workflow orchestration introduces task dependencies, schedules, retries, logs and recovery after a failed step.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Standardizing values and categories</li><li>Managing duplicate records with documented rules</li><li>Handling missing records</li><li>Correcting data types</li><li>Documenting each transformation step</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Build a small analytical model with defined facts, dimensions and grain.</li><li>Organize transformations, tests and documentation in a dbt project.</li><li>Define an orchestrated workflow with dependencies and failure handling.</li><li>Use a classroom storage environment with scoped access and cost controls.</li><li>Compare a local transformation with a guided distributed-processing example.</li><li>Demonstrate a tested refresh and hand off an analysis-ready dataset.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Power Query transformation steps</li><li>Microsoft Excel</li><li>Documented cleaning rules</li><li>Section datasets and starter files</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 9 · Meeting one:</strong> Warehouse structure and dbt transformation models</li><li><strong>Week 9 · Meeting two:</strong> dbt tests, documentation, model dependencies and change tracking</li><li><strong>Week 10 · Meeting one:</strong> Orchestration: tasks, dependencies and schedules</li><li><strong>Week 10 · Meeting two:</strong> Retries, logs, failure investigation and a recovery exercise</li><li><strong>Week 11 · Meeting one:</strong> Cloud object storage, columnar files, permissions and cost awareness</li><li><strong>Week 11 · Meeting two:</strong> Partitioning, scaling tradeoffs and a guided distributed-processing lab</li><li><strong>Week 12 · Meeting one:</strong> Engineering capstone integration and quality review</li><li><strong>Week 12 · Meeting two:</strong> Refresh demonstration, certificate assessment and data handoff</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>Data Cleaning</span><span>Standardization</span><span>Duplicates</span><span>Missing Values</span><span>Documentation</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> An engineering capstone containing ingestion code, modeled warehouse tables, dbt tests and documentation, an orchestrated refresh, and a runbook. The demonstration includes a new data delivery, a failed quality check and a corrected rerun. The handoff identifies table grain, freshness expectations and approved uses.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> The first two certificates or equivalent skills in Python, SQL, relational modeling, ETL and quality testing. Individual enrollees receive a prepared ingestion baseline but must explain and modify it. Classroom cloud access and spending limits are established before this section.</p>
+                <div class="cpanel__tags"><span>Warehouse Modeling</span><span>dbt</span><span>Orchestration</span><span>Cloud Storage</span><span>Runbook</span></div></article>
 <article class="cpanel" data-panel="4">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 04 · Merge &amp; Reconcile</span>
-                  <h3>Merging, Appending &amp; Data Reconciliation</h3>
-                  <em class="cpanel__hook">Combine files without losing the numbers.</em>
+                  <span class="cpanel__badge">Certificate 04 · Weeks 13 to 16</span>
+                  <h3>Certificate in Applied Statistics and Regression</h3>
+                  <em class="cpanel__hook">Data science foundation. Describe uncertainty before you predict.</em>
                 </div>
-                <p class="cpanel__body">Merge related tables using keys and append compatible files. Then reconcile input and output totals to confirm that the prepared result still matches the sources.</p>
+                <p class="cpanel__body">This section uses the engineering handoff to frame analytical questions and examine patterns before modeling. Learners perform exploratory data analysis, calculate descriptive measures and create clear visualizations. Probability, sampling, confidence intervals and introductory hypothesis testing help learners describe uncertainty and distinguish an observed association from a causal explanation.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Merging related tables using keys</li><li>Appending compatible files</li><li>Reconciling input and output totals</li><li>Checking the prepared result against business rules</li><li>Investigating and explaining differences</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Turn a business question into a target, decision context and evaluation plan.</li><li>Profile data and communicate distributions, relationships and anomalies.</li><li>Interpret basic probability, confidence intervals and hypothesis-test results.</li><li>Choose a split that respects the time or grouping structure of the problem.</li><li>Compare a regression model with a baseline using suitable error measures.</li><li>Explain residual patterns, uncertainty and limits on the conclusions.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Power Query merge and append</li><li>Microsoft Excel</li><li>Reconciliation checks</li><li>Source and output totals</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 13 · Meeting one:</strong> Business questions, targets and exploratory data analysis</li><li><strong>Week 13 · Meeting two:</strong> Visualizations, missingness, outliers and an initial findings brief</li><li><strong>Week 14 · Meeting one:</strong> Probability, sampling and uncertainty</li><li><strong>Week 14 · Meeting two:</strong> Confidence intervals, introductory tests and interpretation limits</li><li><strong>Week 15 · Meeting one:</strong> Machine learning workflow, baselines and appropriate data splits</li><li><strong>Week 15 · Meeting two:</strong> Preprocessing pipelines, cross-validation and leakage prevention</li><li><strong>Week 16 · Meeting one:</strong> Regression: linear and tree-based models, errors and residuals</li><li><strong>Week 16 · Meeting two:</strong> Regression project demonstration and certificate assessment</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>Merge</span><span>Append</span><span>Keys</span><span>Reconciliation</span><span>Totals</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> An exploratory analysis and regression notebook with a written question, data audit, baseline comparison, validation results and final test evaluation. A concise stakeholder brief describes the practical interpretation, major sources of error and limits of the evidence.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> The first certificate or equivalent Python, pandas and basic SQL skills, together with basic algebra and comfort interpreting graphs. Direct entrants need not complete all engineering sections; they receive a validated analytical dataset and demonstrate readiness in pandas and basic statistical interpretation.</p>
+                <div class="cpanel__tags"><span>EDA</span><span>Probability</span><span>Hypothesis Testing</span><span>Regression</span><span>Baselines</span></div></article>
 <article class="cpanel" data-panel="5">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 05 · Quality &amp; Docs</span>
-                  <h3>Data Quality Rules, Exception Reporting &amp; Data Dictionaries</h3>
-                  <em class="cpanel__hook">Make reliability visible.</em>
+                  <span class="cpanel__badge">Certificate 05 · Weeks 17 to 20</span>
+                  <h3>Certificate in Classification and Segmentation</h3>
+                  <em class="cpanel__hook">Applied machine learning. Choose metrics that reflect the decision.</em>
                 </div>
-                <p class="cpanel__body">Apply completeness, validity, consistency and uniqueness checks, and record the exceptions they find. Create a simple data dictionary so every field has a clear meaning and source.</p>
+                <p class="cpanel__body">This section extends the machine learning workflow to classification and unsupervised segmentation. Learners build logistic regression and tree-based classifiers, select metrics that reflect the decision, and examine how classification thresholds affect false positives and false negatives. Feature engineering and limited hyperparameter tuning take place within the training and validation process.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Completeness, validity, consistency and uniqueness checks</li><li>Recording and reporting exceptions</li><li>Creating a simple data dictionary</li><li>Documenting business rules</li><li>Mapping the path from source to output</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Define a classification target and compare candidate models with a baseline.</li><li>Interpret a confusion matrix, precision, recall and decision thresholds.</li><li>Build preprocessing and feature steps that avoid target leakage.</li><li>Tune a limited set of model options using appropriate validation data.</li><li>Explain model behavior and inspect errors across relevant subgroups.</li><li>Create, profile and assess segments using an introductory clustering method.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Microsoft Excel</li><li>Power Query</li><li>Data dictionary</li><li>Exception report</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 17 · Meeting one:</strong> Classification: logistic regression, trees and baselines</li><li><strong>Week 17 · Meeting two:</strong> Confusion matrices, precision, recall, imbalance and thresholds</li><li><strong>Week 18 · Meeting one:</strong> Feature engineering, encoding and scaling</li><li><strong>Week 18 · Meeting two:</strong> Controlled model comparison and limited hyperparameter tuning</li><li><strong>Week 19 · Meeting one:</strong> Interpretation, feature importance and error analysis</li><li><strong>Week 19 · Meeting two:</strong> Subgroup evaluation, privacy, intended use and model documentation</li><li><strong>Week 20 · Meeting one:</strong> Clustering, segment profiles and stability</li><li><strong>Week 20 · Meeting two:</strong> Classification and segmentation review and certificate assessment</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>Data Quality</span><span>Exception Report</span><span>Data Dictionary</span><span>Business Rules</span><span>Validation</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> A classification experiment report and a separate segmentation analysis. The portfolio includes a preprocessing pipeline, baseline and model comparisons, a chosen threshold with justification, segment profiles and a model card describing intended use, evaluation and limitations.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> The applied statistics and regression certificate or equivalent experience with pandas, supervised learning, train-validation-test separation and model evaluation. A readiness exercise checks baseline construction, leakage awareness and interpretation of prediction errors.</p>
+                <div class="cpanel__tags"><span>Classification</span><span>Thresholds</span><span>Leakage Prevention</span><span>Clustering</span><span>Model Card</span></div></article>
 <article class="cpanel" data-panel="6">
                 <div class="cpanel__head">
-                  <span class="cpanel__badge">Topic 06 · Refresh &amp; Handoff</span>
-                  <h3>Workflow Refresh, Validation &amp; Handoff Documentation</h3>
-                  <em class="cpanel__hook">Hand over work a colleague can run.</em>
+                  <span class="cpanel__badge">Certificate 06 · Weeks 21 to 24</span>
+                  <h3>Certificate in Forecasting and Model Delivery</h3>
+                  <em class="cpanel__hook">Integrated capstone and handoff. From a dependable pipeline to a usable result.</em>
                 </div>
-                <p class="cpanel__body">Refresh your workflow with another period’s data, test the result and document how it runs. The section finishes with your certificate project: a refreshable ETL workflow with prepared output, data dictionary, process map, reconciliation checks, exception report and rerun instructions.</p>
+                <p class="cpanel__body">This section completes the connection between a dependable data pipeline and a usable analytical result. Time-series instruction introduces trend, seasonality, lagged features and chronological evaluation. Learners compare a simple forecast with a naive or seasonal baseline and explain the effect of the forecast horizon on validation.</p>
                 <div class="cpanel__cols">
                   <div>
-                    <p class="cpanel__col-label">Core Activities</p>
-                    <ul class="cpanel__list"><li>Refreshing the workflow with another period’s data</li><li>Testing and verifying the refreshed output</li><li>Documenting sources, transformations and handoff steps</li><li>Writing instructions for rerunning the workflow</li><li>Demonstrating the workflow and explaining key decisions</li></ul>
+                    <p class="cpanel__col-label">What You Will Be Able to Do</p>
+                    <ul class="cpanel__list"><li>Construct a time-aware baseline and evaluate a forecast chronologically.</li><li>Create lagged or rolling features without using future information.</li><li>Package a selected model and its preprocessing for repeatable batch scoring.</li><li>Validate new inputs and document model and data versions.</li><li>Define checks for data drift, scoring failures and later performance review.</li><li>Demonstrate the complete workflow and explain operating and handoff steps.</li></ul>
                   </div>
                   <div>
-                    <p class="cpanel__col-label">Labs &amp; Tools</p>
-                    <ul class="cpanel__list"><li>Excel with Power Query</li><li>Refreshable ETL workflow</li><li>Rerun instructions</li><li>Certificate assessment</li></ul>
+                    <p class="cpanel__col-label">Live Meetings · 8 Meetings, 16 to 24 Hours</p>
+                    <ul class="cpanel__list"><li><strong>Week 21 · Meeting one:</strong> Time series: trend, seasonality, lagged features and baselines</li><li><strong>Week 21 · Meeting two:</strong> Chronological backtesting, forecast error and horizon selection</li><li><strong>Week 22 · Meeting one:</strong> Model delivery: saved artifacts, dependencies and batch scoring</li><li><strong>Week 22 · Meeting two:</strong> Input checks, logs, drift monitoring and a model operations plan</li><li><strong>Week 23 · Meeting one:</strong> Integrated implementation and a new-batch rehearsal</li><li><strong>Week 23 · Meeting two:</strong> Technical review, corrections and stakeholder presentation practice</li><li><strong>Week 24 · Meeting one:</strong> Capstone demonstrations and individual technical explanations</li><li><strong>Week 24 · Meeting two:</strong> Final assessment, portfolio review and technical handoff</li></ul>
                   </div>
                 </div>
-                <div class="cpanel__tags"><span>Refresh</span><span>Testing</span><span>Handoff</span><span>Certificate Project</span><span>Assessment</span></div></article>
+                <p class="cpanel__body"><strong>Certificate project.</strong> A forecast exercise and an integrated capstone that ingests a new data batch, checks it, refreshes the prepared dataset and produces checked predictions or a forecast. Submissions include the repository, evaluation report, model card, scoring instructions, monitoring plan and stakeholder presentation.</p>
+                <p class="cpanel__body"><strong>Entry preparation.</strong> The preceding data science certificates or equivalent modeling and evaluation skills, together with the ability to work with a documented pipeline. Direct entrants receive an engineering baseline; the overall professional certificate still requires all six certificates and the integrated capstone.</p>
+                <div class="cpanel__tags"><span>Time Series</span><span>Backtesting</span><span>Batch Scoring</span><span>Monitoring</span><span>Capstone</span></div></article>
 </div>
 </div>
 
@@ -1063,29 +1083,29 @@
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">Skills &amp; Tools You'll Master</span>
             <h2 class="h2">
-              The workflow skills behind dependable data.
+              The skills behind dependable data and decisions.
             </h2>
             <p class="section-sub">
-              Spreadsheet Sources · Power Query · Data Quality · Documentation.
+              Python · SQL · dbt · Cloud · scikit-learn · Git.
             </p>
           </header>
 
           <div class="skills__grid">
-<div class="skill" data-animate="scale-in" data-delay="0"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="10" y="10" width="44" height="44" rx="6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 24h44M10 38h44M26 10v44" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Microsoft Excel</span></div>
-<div class="skill" data-animate="scale-in" data-delay="40"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M12 18h40M12 32h28M12 46h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 40l8 6-8 6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Power Query</span></div>
-<div class="skill" data-animate="scale-in" data-delay="80"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M18 8h20l12 12v36H18z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 8v12h12M26 34h16M26 44h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">CSV Files</span></div>
-<div class="skill" data-animate="scale-in" data-delay="120"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="8" y="14" width="48" height="36" rx="5" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 26h48M24 14v36" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Spreadsheet Sources</span></div>
-<div class="skill" data-animate="scale-in" data-delay="160"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><circle cx="28" cy="28" r="16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 40l14 14M20 30v-6M28 30v-12M36 30v-8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Profiling</span></div>
-<div class="skill" data-animate="scale-in" data-delay="200"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M14 14h36L38 32v14l-12 6V32z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 8h24" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Cleaning</span></div>
-<div class="skill" data-animate="scale-in" data-delay="240"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M12 14h14c10 0 10 18 20 18h6M12 50h14c10 0 10-18 20-18" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 24l8 8-8 8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Merge &amp; Append</span></div>
-<div class="skill" data-animate="scale-in" data-delay="280"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M10 22h40M42 14l8 8-8 8M54 42H14M22 34l-8 8 8 8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Reconciliation</span></div>
-<div class="skill" data-animate="scale-in" data-delay="320"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="12" y="8" width="40" height="48" rx="6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 32l8 8 14-16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Quality Checks</span></div>
-<div class="skill" data-animate="scale-in" data-delay="360"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M14 10h30a6 6 0 0 1 6 6v38H20a6 6 0 0 1-6-6z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 22h16M24 32h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Dictionary</span></div>
-<div class="skill" data-animate="scale-in" data-delay="400"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="8" y="10" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="10" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="24" y="42" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 22v8h32v-8M32 30v12" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Process Mapping</span></div>
-<div class="skill" data-animate="scale-in" data-delay="440"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M32 8L56 52H8z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 24v14M32 45v1" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Exception Reports</span></div>
+<div class="skill" data-animate="scale-in" data-delay="0"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="10" y="10" width="44" height="44" rx="6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 24h44M10 38h44M26 10v44" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">pandas</span></div>
+<div class="skill" data-animate="scale-in" data-delay="40"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M12 18h40M12 32h28M12 46h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 40l8 6-8 6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">SQL</span></div>
+<div class="skill" data-animate="scale-in" data-delay="80"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M18 8h20l12 12v36H18z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 8v12h12M26 34h16M26 44h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Python</span></div>
+<div class="skill" data-animate="scale-in" data-delay="120"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="8" y="14" width="48" height="36" rx="5" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 26h48M24 14v36" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Modeling</span></div>
+<div class="skill" data-animate="scale-in" data-delay="160"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M12 14h14c10 0 10 18 20 18h6M12 50h14c10 0 10-18 20-18" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 24l8 8-8 8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">ETL &amp; ELT</span></div>
+<div class="skill" data-animate="scale-in" data-delay="200"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="12" y="8" width="40" height="48" rx="6" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 32l8 8 14-16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Data Quality Tests</span></div>
+<div class="skill" data-animate="scale-in" data-delay="240"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M14 10h30a6 6 0 0 1 6 6v38H20a6 6 0 0 1-6-6z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 22h16M24 32h16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">dbt</span></div>
+<div class="skill" data-animate="scale-in" data-delay="280"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><rect x="8" y="10" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="10" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="24" y="42" width="16" height="12" rx="3" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 22v8h32v-8M32 30v12" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Workflow Orchestration</span></div>
+<div class="skill" data-animate="scale-in" data-delay="320"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M10 22h40M42 14l8 8-8 8M54 42H14M22 34l-8 8 8 8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Cloud Storage</span></div>
+<div class="skill" data-animate="scale-in" data-delay="360"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><circle cx="28" cy="28" r="16" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 40l14 14M20 30v-6M28 30v-12M36 30v-8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">scikit-learn</span></div>
+<div class="skill" data-animate="scale-in" data-delay="400"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M8 50h48M8 12v38" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 42l10-12 8 6 10-18 8 8" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Time Series</span></div>
+<div class="skill" data-animate="scale-in" data-delay="440"><svg class="skill__icon" viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M32 8l22 12v24L32 56 10 44V20z" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20l22 12 22-12M32 32v24" stroke="#268BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="skill__label">Model Delivery</span></div>
 </div>
           <p class="skills__closing" data-animate="fade-up" data-delay="120">
-            You'll practice each of these skills in a documented, refreshable workflow.
+            You'll practice each of these skills in one connected pipeline-to-model project.
           </p>
         </div>
       </section>
@@ -1096,26 +1116,26 @@
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">The Transfotech Way</span>
             <h2 class="h2">
-              Six steps from <span class="accent-underline">raw files to certificate</span>.
+              Six steps from <span class="accent-underline">first call to certificate</span>.
             </h2>
             <p class="section-sub">
-              Your roadmap from a first conversation to a documented, refreshable ETL workflow.
+              Your roadmap from a first conversation to a delivered pipeline, model and professional certificate.
             </p>
           </header>
 
           <!-- Trust stats -->
           <div class="process__stats" data-animate="fade-up" data-delay="100">
             <div class="process__stat">
-              <strong>4 Weeks</strong><span>Certificate section</span>
+              <strong>24 Weeks</strong><span>Bootcamp length</span>
             </div>
             <div class="process__stat">
-              <strong>8</strong><span>Live meetings</span>
+              <strong>48</strong><span>Live meetings</span>
             </div>
             <div class="process__stat">
-              <strong>16–24</strong><span>Live hours</span>
+              <strong>96–144</strong><span>Live hours</span>
             </div>
             <div class="process__stat">
-              <strong>$1,000</strong><span>Individual tuition</span>
+              <strong>6</strong><span>Section certificates</span>
             </div>
           </div>
 
@@ -1144,7 +1164,7 @@
                 </svg>
               </div>
               <h3>Free Consultation</h3>
-<p>Talk with an advisor about the section, the cohort schedule and whether it fits your background.</p>
+<p>Talk with an advisor about the full bootcamp or a single section, the cohort schedule and whether it fits your background.</p>
             </article>
 
             <article
@@ -1172,7 +1192,7 @@
                 </svg>
               </div>
               <h3>Enrollment</h3>
-<p>Choose this individual section or the complete 16-week bootcamp, and receive your source files and introductory preparation.</p>
+<p>Choose the complete 24-week bootcamp or an individual four-week section, then complete the environment setup and readiness exercises.</p>
             </article>
 
             <article
@@ -1196,7 +1216,7 @@
                 </svg>
               </div>
               <h3>Live Meetings &amp; Practice</h3>
-<p>Eight live meetings, twice a week for 2–3 hours each, with demonstrations, guided practice and business cases.</p>
+<p>48 live meetings, twice a week for 2–3 hours each, with demonstrations, guided coding, business cases and feedback.</p>
             </article>
 
             <article
@@ -1220,8 +1240,8 @@
                   <path d="M2 12l10 5 10-5" />
                 </svg>
               </div>
-              <h3>Certificate Project</h3>
-<p>Build a refreshable ETL workflow with prepared output, data dictionary, process map, reconciliation checks and exception report.</p>
+              <h3>Section Projects</h3>
+<p>Each four-week section ends in a project with rerun instructions, from a pandas and SQL notebook to a forecast and delivery workflow.</p>
             </article>
 
             <article
@@ -1245,7 +1265,7 @@
                 </svg>
               </div>
               <h3>Assessment</h3>
-<p>Demonstrate your workflow, explain your key decisions and resolve any material errors found during assessment.</p>
+<p>Demonstrate your work, explain your decisions and correct any material errors found in review. Assessments fall at the section boundaries.</p>
             </article>
 
             <article
@@ -1269,8 +1289,8 @@
                   />
                 </svg>
               </div>
-              <h3>Certificate</h3>
-<p>Earn the Certificate in Data Engineering Foundations once the published requirements are met.</p>
+              <h3>Certificates</h3>
+<p>Earn each section certificate, and the Professional Certificate in Data Engineering and Data Science after all six and the integrated capstone.</p>
             </article>
           </div>
 
@@ -1283,7 +1303,7 @@
               Book a Free Consultation →
             </button>
             <p>
-              Free consultation &nbsp;·&nbsp; Individual section or complete bootcamp
+              Free consultation &nbsp;·&nbsp; Complete bootcamp or individual section
             </p>
           </div>
         </div>
@@ -1321,13 +1341,13 @@
               <div class="vf-blob vf-blob--2"></div>
               <!-- Floating stat cards -->
               <div class="vf-stat vf-stat--tl">
-                <strong>4 Weeks</strong> <span>Certificate section</span>
+                <strong>24 Weeks</strong> <span>Bootcamp length</span>
               </div>
               <div class="vf-stat vf-stat--br">
-                <strong>8</strong> <span>Live meetings</span>
+                <strong>48</strong> <span>Live meetings</span>
               </div>
               <div class="vf-stat vf-stat--bl">
-                <strong>16–24</strong> <span>Live hours</span>
+                <strong>96–144</strong> <span>Live hours</span>
               </div>
               <!-- Brand watermark -->
               <div class="vf-brand">
@@ -1424,37 +1444,37 @@
               Practice on <span class="accent-underline">realistic business data</span>, step by step.
             </h2>
             <p class="section-sub">
-              Profile, clean, combine and check data, then document the workflow so it can be rerun. The examples below are illustrative.
+              Ingest, model, test and analyze data, then document the workflow so it can be rerun. The examples below are illustrative.
             </p>
           </header>
 
           <div class="lab-showcase__grid">
           <div class="lab-card lab-card--terminal" data-animate="fade-up" data-delay="0">
-            <div class="lab-card__header"><div class="lab-tbar"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">etl@transfotech:~/etl-lab</span></div></div>
+            <div class="lab-card__header"><div class="lab-tbar"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">etl@transfotech:~/retail-pipeline</span></div></div>
             <div class="lab-card__body terminal-body">
-              <p class="t-line"><span class="t-prompt">etl@data:~/etl-lab</span></p>
-              <p class="t-line"><span class="t-prompt">└─$</span> <span class="t-cmd">profile sales_jan.csv</span></p>
-              <p class="t-line t-out">Loading sales_jan.csv with 24,508 rows</p>
-              <p class="t-line t-out">STEP &nbsp;&nbsp;&nbsp;&nbsp; STATUS &nbsp;DETAIL</p>
-              <p class="t-line t-out t-open">missing values &nbsp; flagged &nbsp;3 columns</p>
+              <p class="t-line"><span class="t-prompt">etl@data:~/retail-pipeline</span></p>
+              <p class="t-line"><span class="t-prompt">└─$</span> <span class="t-cmd">python ingest_orders.py --batch new</span></p>
+              <p class="t-line t-out">Loaded batch_07.csv · 24,508 rows</p>
+              <p class="t-line t-out">CHECK &nbsp;&nbsp;&nbsp;&nbsp; STATUS &nbsp;DETAIL</p>
               <p class="t-line t-out t-open">duplicates &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; removed &nbsp;128 rows</p>
-              <p class="t-line t-out t-open">data types &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; corrected &nbsp;date, amount</p>
-              <p class="t-line t-out t-vuln">region codes &nbsp;&nbsp;&nbsp;&nbsp; standardized &nbsp;<span class="t-tag">REVIEW</span></p>
-              <p class="t-line t-out">Prepared output saved; totals reconciled</p>
+              <p class="t-line t-out t-open">late records &nbsp;&nbsp;&nbsp;&nbsp; merged &nbsp;41 rows</p>
+              <p class="t-line t-out t-open">missing values &nbsp; flagged &nbsp;3 columns</p>
+              <p class="t-line t-out t-vuln">categories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; standardized &nbsp;<span class="t-tag">REVIEW</span></p>
+              <p class="t-line t-out">dbt tests passed; totals reconciled</p>
               <p class="t-line"><span class="t-prompt">└─$</span> <span class="t-cmd">refresh workflow<span class="blink">█</span></span></p>
             </div>
-            <div class="lab-card__label">Power Query · ETL Lab (illustrative)</div>
+            <div class="lab-card__label">Python · dbt · Pipeline Lab (illustrative)</div>
           </div>
           <div class="lab-card lab-card--siem" data-animate="fade-up" data-delay="120">
-            <div class="lab-card__header"><div class="lab-tbar"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">Reconciliation · Input vs Output</span></div></div>
+            <div class="lab-card__header"><div class="lab-tbar"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">Model Evaluation · Baseline vs Model</span></div></div>
             <div class="lab-card__body siem-body">
               <div class="siem-stats">
-                <div class="siem-stat"><div class="siem-stat__val">24,508</div><div class="siem-stat__label">Input Rows</div></div>
-                <div class="siem-stat"><div class="siem-stat__val siem-stat__val--ok">24,380</div><div class="siem-stat__label">Output Rows</div></div>
-                <div class="siem-stat"><div class="siem-stat__val siem-stat__val--alert">128</div><div class="siem-stat__label">Duplicates Removed</div></div>
+                <div class="siem-stat"><div class="siem-stat__val">3.4 days</div><div class="siem-stat__label">Baseline Error</div></div>
+                <div class="siem-stat"><div class="siem-stat__val siem-stat__val--ok">2.6 days</div><div class="siem-stat__label">Model Error</div></div>
+                <div class="siem-stat"><div class="siem-stat__val siem-stat__val--alert">1</div><div class="siem-stat__label">Feature Removed</div></div>
               </div>
               <div class="siem-chart">
-                <div class="siem-chart__label">Monthly Row Counts — Source Files</div>
+                <div class="siem-chart__label">Weekly Observed Unit Sales — Forecast Exercise</div>
                 <div class="siem-bars">
                   <div class="siem-bar" style="height: 30%"></div><div class="siem-bar" style="height: 55%"></div><div class="siem-bar" style="height: 40%"></div><div class="siem-bar" style="height: 80%"></div>
                   <div class="siem-bar siem-bar--spike" style="height: 100%"></div><div class="siem-bar" style="height: 60%"></div><div class="siem-bar" style="height: 45%"></div><div class="siem-bar" style="height: 36%"></div>
@@ -1462,29 +1482,29 @@
                 </div>
               </div>
               <div class="siem-alerts">
-                <div class="siem-alert siem-alert--high"><span class="siem-alert__badge">HIGH</span><span>Missing region · 12 rows flagged</span></div>
-                <div class="siem-alert siem-alert--med"><span class="siem-alert__badge">MED</span><span>Date format differs · one source file</span></div>
-                <div class="siem-alert siem-alert--low"><span class="siem-alert__badge">LOW</span><span>Category spelling standardized</span></div>
+                <div class="siem-alert siem-alert--high"><span class="siem-alert__badge">HIGH</span><span>Target leakage · delivery date removed from features</span></div>
+                <div class="siem-alert siem-alert--med"><span class="siem-alert__badge">MED</span><span>Stockout weeks · examine before reading as demand</span></div>
+                <div class="siem-alert siem-alert--low"><span class="siem-alert__badge">LOW</span><span>Threshold chosen and justified</span></div>
               </div>
             </div>
-            <div class="lab-card__label">Reconciliation Checks · Exception Report (illustrative)</div>
+            <div class="lab-card__label">Baselines · Validation · Forecast Checks (illustrative)</div>
           </div>
           <div class="lab-card lab-card--burp" data-animate="fade-up" data-delay="240">
-            <div class="lab-card__header"><div class="lab-tbar lab-tbar--orange"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">Data Dictionary · Field Definitions</span></div></div>
+            <div class="lab-card__header"><div class="lab-tbar lab-tbar--orange"><span class="lab-tbar__dot lab-tbar__dot--red"></span><span class="lab-tbar__dot lab-tbar__dot--yellow"></span><span class="lab-tbar__dot lab-tbar__dot--green"></span><span class="lab-tbar__title">Model Card · Intended Use</span></div></div>
             <div class="lab-card__body burp-body">
-              <div class="burp-tabs"><span class="burp-tab burp-tab--active">Fields</span><span class="burp-tab">Rules</span><span class="burp-tab">Exceptions</span><span class="burp-tab">Handoff</span></div>
+              <div class="burp-tabs"><span class="burp-tab burp-tab--active">Target</span><span class="burp-tab">Metrics</span><span class="burp-tab">Limits</span><span class="burp-tab">Handoff</span></div>
               <div class="burp-request">
-                <div class="burp-intercept-badge">FIELD DEFINITION</div>
-                <div class="burp-line burp-line--method">Field: order_date</div>
-                <div class="burp-line">Source: sales_jan.csv</div>
-                <div class="burp-line">Type: Date</div>
-                <div class="burp-line">Rule: required, valid date</div>
+                <div class="burp-intercept-badge">MODEL CARD</div>
+                <div class="burp-line burp-line--method">Target: late_delivery</div>
+                <div class="burp-line">Prediction time: order accepted</div>
+                <div class="burp-line">Data version: batch_07</div>
+                <div class="burp-line">Baseline: always predict on time</div>
                 <div class="burp-line">&nbsp;</div>
-                <div class="burp-line burp-line--body">{"check":"<span class="burp-inject">order_id is unique</span>"}</div>
+                <div class="burp-line burp-line--body">{"check":"<span class="burp-inject">delivery_date is not used as a predictor</span>"}</div>
               </div>
-              <div class="burp-finding"><span class="burp-severity">PASSED</span> Uniqueness check complete</div>
+              <div class="burp-finding"><span class="burp-severity">PASSED</span> Leakage check complete</div>
             </div>
-            <div class="lab-card__label">Data Dictionary · Quality Rules (illustrative)</div>
+            <div class="lab-card__label">Model Card · Handoff Documentation (illustrative)</div>
           </div>
         </div>
         <!-- /lab-showcase__grid -->
@@ -1495,7 +1515,7 @@
             data-delay="200"
           >
             <p>
-              + Excel · Power Query · CSV Files · ETL · Data Quality Checks · Documentation
+              + Python · pandas · SQL · dbt · Orchestration · scikit-learn · Git
             </p>
             <button
               type="button"
@@ -1517,13 +1537,13 @@
           </header>
 
           <div class="learning__grid">
-<article class="feature" data-animate="fade-up" data-delay="0"><div class="feature__emoji">🎥</div><h3>Live Instructor-Led Classes</h3><p>Eight live meetings, twice a week, 2–3 hours each. Learn through demonstrations and guided practice.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="80"><div class="feature__emoji">🛠️</div><h3>Hands-On Practice</h3><p>Work through business cases with real preparation tasks. Plan for 3–5 hours of independent practice each week.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="160"><div class="feature__emoji">🧪</div><h3>Feedback on Your Project</h3><p>Your certificate project develops across the section, with feedback along the way.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="240"><div class="feature__emoji">📂</div><h3>Starter Files Supplied</h3><p>Each section supplies its own business brief, starter files and readiness materials.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="320"><div class="feature__emoji">🧠</div><h3>Repeatable Power Query Workflows</h3><p>Build preparation steps that can be refreshed with the next period’s data.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="400"><div class="feature__emoji">📅</div><h3>Part of a Longer Pathway</h3><p>Take this four-week section on its own, or as part of the 16-week Business &amp; Data Analyst Career Launch Bootcamp.</p></article>
-<article class="feature" data-animate="fade-up" data-delay="480"><div class="feature__emoji">🚫</div><h3>No SQL Required</h3><p>Comfort with tables, spreadsheet files and basic Excel is enough. Required exercises use file-based sources.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="0"><div class="feature__emoji">🎥</div><h3>Live Instructor-Led Classes</h3><p>48 live meetings, twice a week, 2–3 hours each. Learn through demonstrations and guided coding.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="80"><div class="feature__emoji">🛠️</div><h3>Hands-On Practice</h3><p>Work through business cases and projects. Plan for 6–8 hours of independent practice each week, about 10–14 hours weekly with live classes.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="160"><div class="feature__emoji">🧪</div><h3>Feedback on Your Projects</h3><p>Each section project develops across four weeks, with feedback along the way.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="240"><div class="feature__emoji">📂</div><h3>Starter Repositories Supplied</h3><p>Each section supplies a business brief, data dictionary, validated starting files, expected checks and a starter repository.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="320"><div class="feature__emoji">🏪</div><h3>One Connected Business Case</h3><p>A regional retailer, synthetic data with deliberate duplicates and missing values, and one pipeline that feeds every model.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="400"><div class="feature__emoji">🚪</div><h3>Enter at Any of Six Sections</h3><p>Take the full 24 weeks, or enter a single four-week section after a short readiness task confirms its prerequisites.</p></article>
+<article class="feature" data-animate="fade-up" data-delay="480"><div class="feature__emoji">🐍</div><h3>Python From the Start</h3><p>A dedicated introduction to Python and a dedicated week of pandas DataFrames. No prior Python or SQL is required for the first section.</p></article>
 </div>
       </div>
     </section>
@@ -1545,13 +1565,13 @@
               </p>
               <div class="cp-header__stats">
                 <div class="cp-hs">
-                  <strong>4 Weeks</strong><span>Certificate Section</span>
+                  <strong>24 Weeks</strong><span>Bootcamp Length</span>
                 </div>
                 <div class="cp-hs">
-                  <strong>8</strong><span>Live Meetings</span>
+                  <strong>48</strong><span>Live Meetings</span>
                 </div>
                 <div class="cp-hs">
-                  <strong>16–24</strong><span>Live Hours</span>
+                  <strong>96–144</strong><span>Live Hours</span>
                 </div>
               </div>
             </div>
@@ -1605,7 +1625,7 @@
                 <div class="cp-badge cp-badge--live">
                   <span class="cp-live-dot"></span> Live Twice a Week
                 </div>
-                <h3>Live Class Meetings</h3> <p> Two live meetings each week with your instructor, built around demonstrations, guided practice and feedback. </p>
+                <h3>Live Class Meetings</h3> <p> Two live meetings each week with your instructor, built around demonstrations, guided coding and feedback. </p>
                 <ul class="cp-duo__list">
                   <li>
                     <svg viewBox="0 0 16 16" width="14" height="14" fill="none">
@@ -1701,7 +1721,7 @@
                 </div>
                 <h3>Starter Files &amp; Course Materials</h3>
                 <p>
-                  Each section supplies its own business brief, starter files and readiness materials, so you can begin practicing right away.
+                  Each section supplies a business brief, data dictionary, validated starting files, expected checks and a starter repository, so you can begin practicing right away.
                 </p>
                 <ul class="cp-duo__list">
                   <li>
@@ -1721,7 +1741,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    Business brief and starter files
+                    Business brief and data dictionary
                   </li>
                   <li>
                     <svg viewBox="0 0 16 16" width="14" height="14" fill="none">
@@ -1740,7 +1760,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    Source files and entry preparation
+                    Validated starting files and expected checks
                   </li>
                   <li>
                     <svg viewBox="0 0 16 16" width="14" height="14" fill="none">
@@ -1759,7 +1779,7 @@
                         stroke-linejoin="round"
                       />
                     </svg>
-                    Readiness materials for the section
+                    Starter repository and readiness task
                   </li>
                 </ul>
               </div>
@@ -1987,28 +2007,28 @@
               Real work. <span class="accent-underline">Real evidence.</span>
             </h2>
             <p class="section-sub">
-              Your certificate project documents what you can build, check and explain.
+              Your section projects document what you can build, check and explain.
             </p>
           </header>
 
           <div class="success-grid" data-animate="fade-up" data-delay="100">
-<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🔁</div><div class="success-card__body"><strong>Refreshable ETL Workflow</strong><span class="success-card__role">Certificate project</span><p class="success-card__note">A Power Query workflow with prepared output that can be refreshed with another period’s data.</p></div><span class="success-card__badge">Included</span></div>
-<div class="success-card"><div class="success-card__avatar" aria-hidden="true">📘</div><div class="success-card__body"><strong>Data Dictionary</strong><span class="success-card__role">Certificate project</span><p class="success-card__note">A simple dictionary that defines each field and records where it came from.</p></div><span class="success-card__badge">Included</span></div>
-<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🧮</div><div class="success-card__body"><strong>Reconciliation Checks</strong><span class="success-card__role">Certificate project</span><p class="success-card__note">Checks that compare input and output totals so the prepared data can be trusted.</p></div><span class="success-card__badge">Included</span></div>
-<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🚩</div><div class="success-card__body"><strong>Exception Report</strong><span class="success-card__role">Certificate project</span><p class="success-card__note">A record of the records that failed quality rules, plus instructions for rerunning the workflow.</p></div><span class="success-card__badge">Included</span></div>
+<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🔁</div><div class="success-card__body"><strong>Tested Pipeline &amp; Warehouse</strong><span class="success-card__role">Portfolio evidence</span><p class="success-card__note">Ingestion code, modeled warehouse tables, dbt tests and documentation, and an orchestrated refresh with a runbook.</p></div><span class="success-card__badge">Included</span></div>
+<div class="success-card"><div class="success-card__avatar" aria-hidden="true">📈</div><div class="success-card__body"><strong>Regression &amp; Classification Studies</strong><span class="success-card__role">Portfolio evidence</span><p class="success-card__note">Baseline comparisons, validation results, a chosen threshold with justification and a stakeholder brief.</p></div><span class="success-card__badge">Included</span></div>
+<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🧩</div><div class="success-card__body"><strong>Segmentation Analysis</strong><span class="success-card__role">Portfolio evidence</span><p class="success-card__note">Segment profiles assessed for stability and usefulness, not treated as known outcomes.</p></div><span class="success-card__badge">Included</span></div>
+<div class="success-card"><div class="success-card__avatar" aria-hidden="true">🚀</div><div class="success-card__body"><strong>Forecast &amp; Delivery Workflow</strong><span class="success-card__role">Portfolio evidence</span><p class="success-card__note">A new data batch checked, refreshed and scored, with a model card, scoring instructions and monitoring plan.</p></div><span class="success-card__badge">Included</span></div>
 </div>
           <div class="success-stats" data-animate="fade-up" data-delay="200">
             <div class="success-stat">
-              <strong>4 Weeks</strong> <span>Certificate section</span>
+              <strong>24 Weeks</strong> <span>Bootcamp length</span>
             </div>
             <div class="success-stat">
-              <strong>8</strong> <span>Live meetings</span>
+              <strong>48</strong> <span>Live meetings</span>
             </div>
             <div class="success-stat">
-              <strong>16–24</strong> <span>Live instructional hours</span>
+              <strong>96–144</strong> <span>Live instructional hours</span>
             </div>
             <div class="success-stat">
-              <strong>$1,000</strong> <span>Individual tuition</span>
+              <strong>6</strong> <span>Section certificates</span>
             </div>
           </div>
         </div>
@@ -2021,60 +2041,44 @@
             <span class="eyebrow">Hands-On Learning</span>
             <h2 class="h2">The way you learn here is the way you'll work.</h2>
             <p class="section-sub">
-              Every topic connects technical skills to a business need. Your certificate project brings them together in documented work you can explain and demonstrate.
+              Every topic connects technical skills to a business need. Your projects bring them together in documented work you can explain and demonstrate.
             </p>
           </header>
 
           <div class="experience__grid">
             <article class="project-card" data-animate="fade-up" data-delay="0">
               <div class="project-card__logo project-card__logo--emoji">🔁</div>
-              <h3>Refreshable ETL Workflow</h3>
+              <h3>Tested Data Pipeline</h3>
               <p>
-                Import spreadsheet and CSV sources into a repeatable Power Query workflow and produce prepared, analysis-ready output.
+                Ingest files and an API, load modeled tables, test quality and document safe reruns.
               </p>
             </article>
-            <article
-              class="project-card"
-              data-animate="fade-up"
-              data-delay="120"
-            >
-              <div class="project-card__logo project-card__logo--emoji">📘</div>
-              <h3>Data Dictionary</h3>
+            <article class="project-card" data-animate="fade-up" data-delay="120">
+              <div class="project-card__logo project-card__logo--emoji">🏗️</div>
+              <h3>Warehouse &amp; dbt Project</h3>
               <p>
-                Define each field, its meaning and its source, so anyone can understand what the prepared data contains.
+                Build fact and dimension models, with dbt tests, documentation and an orchestrated refresh.
               </p>
             </article>
-            <article
-              class="project-card"
-              data-animate="fade-up"
-              data-delay="240"
-            >
-              <div class="project-card__logo project-card__logo--emoji">🗺️</div>
-              <h3>Process Map</h3>
+            <article class="project-card" data-animate="fade-up" data-delay="240">
+              <div class="project-card__logo project-card__logo--emoji">📊</div>
+              <h3>Regression &amp; Classification</h3>
               <p>
-                Map the path from source files to prepared output, including every transformation along the way.
+                Frame a question, set a baseline, validate honestly and explain errors, thresholds and limits.
               </p>
             </article>
-            <article
-              class="project-card"
-              data-animate="fade-up"
-              data-delay="360"
-            >
-              <div class="project-card__logo project-card__logo--emoji">🧮</div>
-              <h3>Reconciliation Checks</h3>
+            <article class="project-card" data-animate="fade-up" data-delay="360">
+              <div class="project-card__logo project-card__logo--emoji">🔮</div>
+              <h3>Forecast Exercise</h3>
               <p>
-                Reconcile input and output totals and apply completeness, validity, consistency and uniqueness checks.
+                Evaluate chronologically against a naive or seasonal baseline, without using future information.
               </p>
             </article>
-            <article
-              class="project-card"
-              data-animate="fade-up"
-              data-delay="480"
-            >
+            <article class="project-card" data-animate="fade-up" data-delay="480">
               <div class="project-card__logo project-card__logo--emoji">📋</div>
-              <h3>Exception Report &amp; Rerun Instructions</h3>
+              <h3>Model Card &amp; Handoff</h3>
               <p>
-                Record the exceptions your quality checks find, and write instructions so a colleague can rerun and verify the workflow.
+                Package one model for batch scoring, with a monitoring plan and a guide another person can follow.
               </p>
             </article>
           </div>
@@ -2087,10 +2091,10 @@
           <header class="section-head" data-animate="fade-up">
             <span class="eyebrow">Where It Applies</span>
             <h2 class="h2">
-              Where data preparation skills <span class="accent-underline">fit at work</span>.
+              Where these skills <span class="accent-underline">fit at work</span>.
             </h2>
           </header>
-          <p class="section-sub" data-animate="fade-up" data-delay="40" style="max-width:640px;margin:-8px auto 24px;text-align:center">These job-search directions come from the course outline. The right level depends on your background and each vacancy’s requirements; the certificate does not guarantee employment.</p>
+          <p class="section-sub" data-animate="fade-up" data-delay="40" style="max-width:640px;margin:-8px auto 24px;text-align:center">These are curriculum-based search directions. Suitable job titles and seniority depend on your prior experience and the requirements of each vacancy; the certificates do not guarantee employment.</p>
 
           <h3
             class="outcomes__sub-title"
@@ -2100,25 +2104,26 @@
             Job-Search Directions:
           </h3>
           <div class="outcomes-table" data-animate="fade-up" data-delay="120">
-<div class="outcomes-row outcomes-row--head"><span>Role</span><span>Focus</span></div>
-<div class="outcomes-row"><span>Data Quality Assistant</span><span>Data quality reviews</span></div>
-<div class="outcomes-row"><span>Data Operations Support</span><span>Routine data operations</span></div>
-<div class="outcomes-row"><span>Data Preparation Assistant</span><span>Reporting preparation</span></div>
-<div class="outcomes-row"><span>Data Stewardship Support</span><span>Data definitions and documentation</span></div>
+<div class="outcomes-row outcomes-row--head"><span>Career direction</span><span>Work practiced in the bootcamp</span></div>
+<div class="outcomes-row"><span>Data operations and quality</span><span>Check incoming data, investigate failed records and document repeatable refresh steps</span></div>
+<div class="outcomes-row"><span>Junior data or analytics engineering</span><span>Develop SQL transformations, maintain data models and test small pipelines</span></div>
+<div class="outcomes-row"><span>Data analysis and decision support</span><span>Query prepared data, investigate patterns and explain uncertainty</span></div>
+<div class="outcomes-row"><span>Data science and predictive analytics</span><span>Build baseline models, evaluate predictions and communicate model limitations</span></div>
+<div class="outcomes-row"><span>Analytical work in an existing role</span><span>Improve forecasting, customer analysis or operating decisions using a reproducible workflow</span></div>
 </div>
           <h3
             class="outcomes__sub-title"
             data-animate="fade-up"
             data-delay="200"
           >
-            Where the Skills Apply:
+            Related Occupations (U.S. Bureau of Labor Statistics):
           </h3>
           <div class="outcomes-table" data-animate="fade-up" data-delay="240">
-<div class="outcomes-row"><span>Reporting Preparation</span><span>Recurring reports</span></div>
-<div class="outcomes-row"><span>Data Quality Reviews</span><span>Quality rules and checks</span></div>
-<div class="outcomes-row"><span>Routine Data Operations</span><span>Documented, refreshable workflows</span></div>
-<div class="outcomes-row"><span>Further Study</span><span>Data engineering studies</span></div>
+<div class="outcomes-row outcomes-row--head"><span>Related occupation</span><span>Median annual wage, May 2025 · Projected growth, 2025 to 2035</span></div>
+<div class="outcomes-row"><span>Data scientists</span><span>$120,230 · 35%</span></div>
+<div class="outcomes-row"><span>Database architects</span><span>$139,500 · 9%</span></div>
 </div>
+          <p class="section-sub" data-animate="fade-up" data-delay="280" style="max-width:720px;margin:16px auto 0;text-align:center;font-size:.9rem">These figures describe established occupations across experience levels. They are not starting salaries or expected graduate earnings. BLS identifies a bachelor’s degree as typical preparation for both occupations, and some data science employers prefer advanced degrees. Database architect figures are a related infrastructure benchmark, not a separate estimate for every job titled data engineer.</p>
           <div class="outcomes__cta" data-animate="fade-up" data-delay="360">
             <button
               type="button"
@@ -2138,16 +2143,16 @@
             <span class="eyebrow">Learning Support</span>
             <h2 class="h2">Guidance at every step of your project.</h2>
             <p class="lead">
-              Instructor-led classes, guided practice and feedback, from your first source file to your final assessment.
+              Instructor-led classes, guided coding and feedback, from your first Python script to your final capstone demonstration.
             </p>
 
             <ul class="check-list">
 <li><span class="check">✓</span> Instructor-led live meetings, twice a week</li>
-<li><span class="check">✓</span> Demonstrations, guided practice and business cases</li>
-<li><span class="check">✓</span> Feedback on your certificate project as it develops</li>
-<li><span class="check">✓</span> Business brief, starter files and readiness materials</li>
-<li><span class="check">✓</span> Published assessment criteria for the section</li>
-<li><span class="check">✓</span> A chance to resolve material errors found during assessment</li>
+<li><span class="check">✓</span> Demonstrations, guided coding and business cases</li>
+<li><span class="check">✓</span> Feedback on your section projects as they develop</li>
+<li><span class="check">✓</span> Business brief, data dictionary and starter repository</li>
+<li><span class="check">✓</span> Published assessment criteria for every section</li>
+<li><span class="check">✓</span> A chance to correct material errors found in review</li>
 </ul>
           </div>
 
@@ -2164,10 +2169,10 @@
             </div>
             <div class="mentor-chat">
               <div class="bubble bubble--in">
-                Your append step looks solid. One note: reconcile the row counts after the merge. Duplicate keys can quietly inflate your totals.
+                Your forecast beats the naive baseline, but check the split. Lagged features must only use information from before the prediction time.
               </div>
               <div class="bubble bubble--out">
-                Got it. Adding a reconciliation check and rerunning the refresh now. Thanks!
+                Got it. Rebuilding the lags and rerunning the chronological backtest now. Thanks!
               </div>
             </div>
             <div class="mentor-card">
@@ -2203,16 +2208,16 @@
             Clear requirements to <span class="accent-underline">earn your certificate</span>.
           </h2>
           <p class="section-sub" data-animate="fade-up" data-delay="160">
-            The same published standards apply to every learner, whether you enroll in this section alone or in the full bootcamp.
+            The same published standards apply to every learner, whether you enroll in one section or the full bootcamp. Each award is a program-issued certificate of demonstrated completion, distinct from vendor certification examinations and academic degrees.
           </p>
           <ol class="guarantee__rows" data-animate="fade-up" data-delay="220">
 <li class="grow"><span class="grow__num">1</span><span class="grow__text">Complete the required practical exercises</span></li>
-<li class="grow"><span class="grow__num">2</span><span class="grow__text">Submit the section project</span></li>
-<li class="grow"><span class="grow__num">3</span><span class="grow__text">Meet the published assessment criteria: technical accuracy, validation, business relevance and communication</span></li>
-<li class="grow"><span class="grow__num">4</span><span class="grow__text">Demonstrate your workflow</span></li>
-<li class="grow"><span class="grow__num">5</span><span class="grow__text">Explain your key decisions</span></li>
-<li class="grow"><span class="grow__num">6</span><span class="grow__text">Resolve material errors identified during assessment</span></li>
-<li class="grow"><span class="grow__num">7</span><span class="grow__text">Individual-section and full-program learners meet the same certificate standards</span></li>
+<li class="grow"><span class="grow__num">2</span><span class="grow__text">Submit the section project with rerun instructions</span></li>
+<li class="grow"><span class="grow__num">3</span><span class="grow__text">Meet the published criteria: correctness, validation, reproducibility, documentation and interpretation</span></li>
+<li class="grow"><span class="grow__num">4</span><span class="grow__text">Demonstrate your work</span></li>
+<li class="grow"><span class="grow__num">5</span><span class="grow__text">Explain your individual decisions</span></li>
+<li class="grow"><span class="grow__num">6</span><span class="grow__text">Correct material errors identified during review</span></li>
+<li class="grow"><span class="grow__num">7</span><span class="grow__text">Individual-section and full-program learners meet the same assessment standards</span></li>
 </ol>
           <div class="guarantee__cta" data-animate="fade-up" data-delay="300">
             <button
@@ -2233,26 +2238,26 @@
             <span class="eyebrow">Enrollment Options</span>
             <h2 class="h2">Two Ways to Enroll</h2>
             <p class="section-sub">
-              Take this four-week section on its own, or save with the complete 16-week bootcamp. Program-issued certificate awards are included in the stated tuition.
+              Complete the full 24-week bootcamp, or enter an individual four-week section after demonstrating its prerequisites. Tuition is to be confirmed; book a free call for current fees, payment terms and any software or cloud charges.
             </p>
           </header>
 
           <div class="pv2__grid pv2__grid--two">
             <article class="pv2-card" data-animate="fade-up" data-delay="0">
               <span class="pv2-card__badge pv2-card__badge--muted">SINGLE SECTION</span>
-              <h3 class="pv2-card__title">Data Engineering Foundation</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount">$1,000</span></div>
+              <h3 class="pv2-card__title">Individual Four-Week Section</h3>
+              <div class="pv2-card__price"><span class="pv2-card__amount pv2-card__amount--tbc">Tuition to be confirmed</span></div>
               <div class="pv2-card__price-meta"><span class="pv2-card__total-muted">4 weeks · individual enrollment</span></div>
-              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Weeks 5 to 8 of the bootcamp</li><li><span class="pv2-check" aria-hidden="true">✓</span>8 live meetings, 16 to 24 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>ETL and Power Query training with file-based sources</li><li><span class="pv2-check" aria-hidden="true">✓</span>Source files and introductory preparation</li><li><span class="pv2-check" aria-hidden="true">✓</span>Certificate project and assessment</li><li><span class="pv2-check" aria-hidden="true">✓</span>Certificate in Data Engineering Foundations after requirements are met</li></ul>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Any one of the six certificate sections</li><li><span class="pv2-check" aria-hidden="true">✓</span>8 live meetings, 16 to 24 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>Business brief, data dictionary, starting files and starter repository</li><li><span class="pv2-check" aria-hidden="true">✓</span>Readiness task confirming the section’s prerequisites</li><li><span class="pv2-check" aria-hidden="true">✓</span>Section project and assessment</li><li><span class="pv2-check" aria-hidden="true">✓</span>The certificate for that section after requirements are met</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Free Call</button>
             </article>
             <article class="pv2-card pv2-card--featured" data-animate="fade-up" data-delay="140">
-              <span class="pv2-card__ribbon">BEST VALUE</span>
+              <span class="pv2-card__ribbon">FULL PROGRAM</span>
               <h3 class="pv2-card__title">Complete Bootcamp</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount">$3,000</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__strike">$4,000</span><span class="pv2-card__save">Save $1,000 (25%)</span></div>
-              <p class="pv2-card__body">Business &amp; Data Analyst Career Launch Bootcamp</p>
-              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>16 weeks, four consecutive four-week sections</li><li><span class="pv2-check" aria-hidden="true">✓</span>32 live meetings, 64 to 96 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>Includes the Data Engineering Foundations section</li><li><span class="pv2-check" aria-hidden="true">✓</span>All four section certificates after requirements are met</li><li><span class="pv2-check" aria-hidden="true">✓</span>Professional Certificate in Business &amp; Data Analytics</li><li><span class="pv2-check" aria-hidden="true">✓</span>Integrated final project</li></ul>
+              <div class="pv2-card__price"><span class="pv2-card__amount pv2-card__amount--tbc">Tuition to be confirmed</span></div>
+              <div class="pv2-card__price-meta"><span class="pv2-card__total-muted">24 weeks · six consecutive sections</span></div>
+              <p class="pv2-card__body">Data Engineering with Data Science</p>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>12 weeks of data engineering, then 12 weeks of data science</li><li><span class="pv2-check" aria-hidden="true">✓</span>48 live meetings, 96 to 144 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>All six section certificates after requirements are met</li><li><span class="pv2-check" aria-hidden="true">✓</span>Professional Certificate in Data Engineering and Data Science</li><li><span class="pv2-check" aria-hidden="true">✓</span>Integrated capstone with runbook, model card and monitoring plan</li></ul>
               <button type="button" class="pv2-card__cta pv2-card__cta--light" data-modal-open="book">Book a Free Call</button>
             </article>
           </div>
@@ -2274,8 +2279,8 @@
                 />
                 <span>Transfotech Academy</span>
               </div>
-              <p class="cert-label">Certificate of Completion</p>
-              <p class="cert-program">Data Engineering Foundations</p>
+              <p class="cert-label">Professional Certificate</p>
+              <p class="cert-program">Data Engineering with Data Science</p>
               <div class="cert-divider"></div>
               <p class="cert-awarded">Awarded to</p>
               <p class="cert-name">Your Full Name</p>
@@ -2314,16 +2319,16 @@
             data-delay="150"
           >
             <span class="eyebrow">Your Credential</span>
-            <h2 class="h2">Earn a certificate that documents your skills.</h2>
+            <h2 class="h2">Earn certificates that document your skills.</h2>
             <p class="lead">
-              Complete the requirements to earn the Certificate in Data Engineering Foundations, recognizing your demonstrated completion of the learning requirements.
+              Earn a certificate for each four-week section you complete. Finish all six sections and the integrated capstone to receive the Professional Certificate in Data Engineering and Data Science, and keep all six section certificates.
             </p>
             <ul class="check-list">
 <li><span class="check">✓</span> Issued by Transfotech Academy</li>
-<li><span class="check">✓</span> Recognizes completion of all section requirements</li>
-<li><span class="check">✓</span> Backed by your certificate project and assessment</li>
+<li><span class="check">✓</span> Six section certificates plus the professional certificate</li>
+<li><span class="check">✓</span> Backed by assessed projects and a live demonstration</li>
 <li><span class="check">✓</span> Same standards for individual and full-program learners</li>
-<li><span class="check">✓</span> Also counts toward the Professional Certificate in Business &amp; Data Analytics</li>
+<li><span class="check">✓</span> Sections taken in separate enrollments count toward the professional certificate</li>
 </ul>
             <button
               type="button"
@@ -2331,7 +2336,7 @@
               data-modal-open="book"
               style="margin-top: 8px"
             >
-              Get Your Certificate →
+              Start Your Certificates →
             </button>
           </div>
         </div>
@@ -2354,7 +2359,7 @@
               Next Cohort <span class="accent-underline urgency__date">Dates To Be Announced</span>
             </h2>
             <p class="section-sub" style="margin: 0 auto; max-width: 560px">
-              Book a free call to hear about upcoming cohort dates, class times and enrollment options for this section and the complete bootcamp.
+              Book a free call to hear about upcoming cohort dates, class times and enrollment options for the complete bootcamp and individual sections.
             </p>
           </header>
 
@@ -2405,8 +2410,8 @@
             <div class="urgency__perk">
               <span class="urgency__perk-ico">🎁</span>
               <div>
-                <strong>Individual or Full Bootcamp</strong>
-<p>Take this section for $1,000, or the complete bootcamp for $3,000</p>
+                <strong>Full Bootcamp or Single Section</strong>
+<p>Take all six sections, or enter one after meeting its prerequisites</p>
               </div>
             </div>
             <div class="urgency__perk">
@@ -2420,7 +2425,7 @@
               <span class="urgency__perk-ico">📂</span>
               <div>
                 <strong>Starter Materials Supplied</strong>
-<p>Source files, business brief and readiness materials</p>
+<p>Business brief, data dictionary, starting files and starter repository</p>
               </div>
             </div>
           </div>
@@ -2451,69 +2456,69 @@
           <div class="faq__list">
             <details class="faq-item" open data-animate="fade-up" data-delay="0">
               <summary>
-                Do I need SQL or programming experience?<span class="chev"></span>
+                Do I need programming experience?<span class="chev"></span>
               </summary>
-              <p>No. This section needs comfort with tables, spreadsheet files and basic Excel operations. Required exercises use file-based sources, so no prior SQL or programming is needed.</p>
+              <p>No. The full program begins with Python fundamentals, and prior Python or SQL is not required for the first section. You should be comfortable managing files, using a browser, reading tables and graphs, and working with percentages and introductory algebra. A short environment setup and readiness exercise before the first class checks that you are ready.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="80">
               <summary>
-                How long is the course?<span class="chev"></span>
+                How long is the program?<span class="chev"></span>
               </summary>
-              <p>Four weeks: eight live meetings, held twice each week for 2 to 3 hours each, for 16 to 24 live instructional hours in total.</p>
+              <p>Twenty-four weeks: 12 weeks of data engineering followed by 12 weeks of data science. There are 48 live meetings, held twice each week for 2 to 3 hours each, for 96 to 144 live instructional hours in total. Each four-week section has 8 meetings and 16 to 24 live hours.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="160">
               <summary>
                 How many hours per week should I plan for?<span class="chev"></span>
               </summary>
-              <p>Besides the two live meetings, plan for a recommended 3 to 5 hours of independent practice each week.</p>
+              <p>Plan for a recommended 6 to 8 hours of independent practice each week in addition to 4 to 6 scheduled live hours, a total of 10 to 14 hours weekly. New programmers may need more time, especially during the first month and capstone preparation.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="240">
               <summary>
                 What will I learn?<span class="chev"></span>
               </summary>
-              <p>You will learn extraction, transformation and loading (ETL) with spreadsheet and CSV sources: profiling data, correcting data types, standardizing values, combining files, applying quality checks and documenting every step in repeatable Power Query workflows.</p>
+              <p>Python, pandas and SQL; relational and analytical data modeling; ingestion from files and APIs; ETL and ELT with incremental loads; data quality tests; warehouses with dbt; workflow orchestration; cloud storage concepts; then exploratory analysis, statistics, regression, classification, clustering, forecasting and batch model delivery.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="320">
               <summary>
                 What will I build?<span class="chev"></span>
               </summary>
-              <p>A refreshable ETL workflow with prepared output, a data dictionary, a process map, reconciliation checks, an exception report and instructions for rerunning the workflow.</p>
+              <p>One connected business case: a regional retailer working to reduce late deliveries and improve stock planning. You build a tested, refreshable pipeline, then use it to predict delivery duration, classify late-delivery risk, describe customer segments and forecast weekly observed unit sales. Your capstone delivers one principal model or forecast connected to that pipeline.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
                 Which software do I need?<span class="chev"></span>
               </summary>
-              <p>Excel with Power Query. Individual enrollees receive the source files and introductory preparation needed for the section. Enrollment materials will state any additional software arrangements.</p>
+              <p>Python, pandas and notebooks; one SQL environment; dbt; one workflow orchestrator; scikit-learn; and Git, plus one cloud environment for bounded labs. A tested configuration and sample data are provided before the cohort begins. Enrollment materials will state the required device or hosted environment, supported software versions and any additional charges.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
                 How much does it cost?<span class="chev"></span>
               </summary>
-              <p>Tuition for this individual four-week section is $1,000. The complete 16-week Business &amp; Data Analyst Career Launch Bootcamp is $3,000, which saves $1,000 (25%) compared with buying all four sections separately for $4,000.</p>
+              <p>Tuition for the complete bootcamp and for individual four-week sections is to be confirmed. Book a free consultation and an advisor can share current fees, payment terms and any software or cloud arrangements.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
-                Is this section part of a larger program?<span class="chev"></span>
+                Can I take just one section?<span class="chev"></span>
               </summary>
-              <p>Yes. It is Weeks 5 to 8 of the 16-week bootcamp, alongside sections on Excel, SQL and Power BI. You can enroll in this section on its own or take the complete bootcamp.</p>
+              <p>Yes. The program has six consecutive four-week sections, and you can enter one after demonstrating its prerequisites through a short readiness task. Data science sections can use the reviewed engineering handoff dataset, so you do not need to enroll in all engineering sections. Sections taken in separate enrollments count toward the professional certificate.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
                 Do I get a certificate?<span class="chev"></span>
               </summary>
-              <p>Yes. You earn the Certificate in Data Engineering Foundations after you complete the required practical exercises, submit the section project, meet the published assessment criteria and demonstrate your work.</p>
+              <p>Yes. You earn a section certificate after you complete the required practical exercises, submit the section project with rerun instructions, meet the published criteria and demonstrate your work. Completing all six sections and the integrated capstone earns the Professional Certificate in Data Engineering and Data Science. These are program-issued certificates of demonstrated completion, distinct from vendor certification examinations and academic degrees.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
                 What kinds of roles are related to these skills?<span class="chev"></span>
               </summary>
-              <p>Job-search directions include data quality assistant, data operations support, data preparation assistant and data stewardship support, as well as reporting preparation within an existing role. The certificate does not guarantee a job.</p>
+              <p>Job-search directions include data operations and quality, junior data or analytics engineering, data analysis and decision support, and data science and predictive analytics, as well as analytical work in an existing role. Suitable titles and seniority depend on your experience and each vacancy. The certificates do not guarantee a job.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>
                 What if I'm still not sure?<span class="chev"></span>
               </summary>
-              <p>That is what the free consultation is for. An advisor can talk through your background, the schedule and whether this section is the right fit.</p>
+              <p>That is what the free consultation is for. An advisor can talk through your background, the schedule and whether the full bootcamp or a single section is the right fit.</p>
             </details>
             
           </div>
@@ -2524,10 +2529,10 @@
       <section class="final-cta" id="cta">
         <div class="container final-cta__inner">
           <h2 class="h1" data-animate="fade-up">
-            Your data engineering foundation starts with one call.
+            Your data engineering and data science career starts with one call.
           </h2>
           <p class="lead" data-animate="fade-up" data-delay="120">
-            Dependable analysis starts with dependable data. Learn to prepare it, check it and document it, and build a workflow you can explain and rerun.
+            Dependable analysis starts with dependable data. Learn to prepare it, store it, model it and deliver it, and build a workflow you can explain and rerun.
           </p>
           <div
             class="final-cta__buttons"
@@ -2550,7 +2555,7 @@
             </button>
           </div>
           <p class="fine-print" data-animate="fade-up" data-delay="340">
-            Free call · No commitment · Individual section or complete bootcamp
+            Free call · No commitment · Complete bootcamp or individual section
           </p>
         </div>
       </section>
@@ -2812,7 +2817,7 @@
               data-form-id="QEV635AucHVkyYJbSPjq"
               data-cookie-consent="true"
               data-cookie-consent-provider="auto"
-              title="Data Engineering Foundation | Book a Call"
+              title="Data Engineering with Data Science | Book a Call"
               scrolling="no"
               style="width:100%;height:463px;border:none;border-radius:20px;display:block;"
             ></iframe>
@@ -2856,12 +2861,12 @@
               Get the Course Outline — Free
             </h2>
             <p class="modal__sub">
-              See what you'll learn: every topic area, project deliverable and tool before you commit to anything.
+              See what you'll learn: every section, weekly meeting topic, project deliverable and tool before you commit to anything.
             </p>
             <ul class="modal__points">
-              <li><span class="check">✓</span> 6 topic areas with full activity lists</li>
-              <li><span class="check">✓</span> Certificate project deliverables</li>
-              <li><span class="check">✓</span> Tools used: Excel and Power Query</li>
+              <li><span class="check">✓</span> 6 certificate sections with weekly meeting plans</li>
+              <li><span class="check">✓</span> Section projects and the integrated capstone</li>
+              <li><span class="check">✓</span> Tools used: Python, pandas, SQL, dbt and scikit-learn</li>
             </ul>
           </aside>
           <div class="modal__form-panel">
@@ -2881,7 +2886,7 @@
               data-form-id="HkddEIw823GvWoaYErwu"
               data-cookie-consent="true"
               data-cookie-consent-provider="auto"
-              title="Data Engineering Foundation | Download PDF"
+              title="Data Engineering with Data Science | Download PDF"
               scrolling="no"
               style="width:100%;height:466px;border:none;border-radius:20px;display:block;"
             ></iframe>

@@ -1,16 +1,59 @@
 # Changelog
 
-All notable changes to the Certificate in Data Engineering Foundation landing page.
+All notable changes to the Data Engineering with Data Science landing page (formerly the Certificate in
+Data Engineering Foundation landing page).
 The page was built from the Business & Data Analytics with AI landing page (v1.0.0 baseline).
 
+- **MAJOR** — course renamed or restructured
 - **MINOR** — content or feature additions
 - **PATCH** — fixes
 
 ## [Unreleased]
 
 ### Pending
+- Tuition for the full bootcamp and for individual sections is still to be confirmed (the program PDF says to
+  publish fees, payment terms and software/cloud charges before opening enrollment). The pricing cards and the
+  FAQ currently say "to be confirmed"; replace them with figures once set.
+- Deploy to the new folder `public_html/data-engineering-with-data-science/` (canonical, og:url and og:image now
+  point there) and redirect the old `certificate-in-data-engineering-foundation/` URL to it if it was ever live.
+- Confirm the instructor line-up for the 24-week program (the PDF does not name one; Kris Jamsa is unchanged).
+- Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
+
+## [2.0.0] - 2026-10-24
+
+The course is now **Data Engineering with Data Science**, a 24-week bootcamp, replacing the four-week Certificate
+in Data Engineering Foundation. All copy follows the new program PDF.
+
+### Changed
+- Course name, title, meta/Open Graph/Twitter descriptions, JSON-LD, canonical and og:url
+  (`/data-engineering-with-data-science/`). JSON-LD no longer carries a price, since tuition is not confirmed.
+- Hero, trust bar, Why Now, transformation table, process, community, deliverables and final CTA rewritten for the
+  24-week structure: 12 weeks of data engineering then 12 of data science, 48 live meetings, 96–144 live hours,
+  6 to 8 hours of independent practice a week, six section certificates plus the Professional Certificate in
+  Data Engineering and Data Science.
+- Curriculum is now six certificate sections (was six topic areas): each shows the PDF's overview, the six
+  "what you will be able to do" outcomes, its eight weekly meeting topics (all 48, verbatim), certificate project
+  and entry preparation.
+- Skills and tools: pandas, SQL, Python, data modeling, ETL/ELT, dbt, orchestration, cloud storage,
+  scikit-learn, time series, model delivery (was Excel and Power Query).
+- Lab showcase cards now show a Python/dbt pipeline run, a baseline-vs-model evaluation and a model card.
+- Careers: the five career directions from the PDF, plus the BLS related-occupation figures (data scientists
+  $120,230 median, 35% growth; database architects $139,500, 9%) with the PDF's caveats.
+- Requirements, certificate and FAQ copy follow the PDF (same standards for section and full-program learners;
+  certificates are distinct from vendor exams and degrees; direct entry after a readiness task).
+- Pricing shows two enrollment options (individual four-week section, complete bootcamp) with "Tuition to be
+  confirmed". The $1,000 / $3,000 / $4,000 figures and the 16-week Business & Data Analytics bootcamp references
+  are removed.
+- Careers tables: left-aligned, wider second column for the longer descriptions.
+
+### Added
+- New social-share image and favicons carrying the new title
+  (`data-engineering-with-data-science-og.jpg`, `-og-200x200.webp`, `-apple-touch-icon.png`).
+
+### Removed
+- Old `data-engineering-foundation-*` images, which showed the previous course name.
 
 ## [1.5.7] - 2026-10-21
 
