@@ -28,7 +28,8 @@
       "name": "Data Engineering with Data Science",
       "description": "24-week, instructor-led bootcamp: 12 weeks of data engineering followed by 12 weeks of data science. Six four-week certificate sections and an integrated capstone lead to the Professional Certificate in Data Engineering and Data Science.",
       "provider": { "@type": "Organization", "name": "Transfotech Academy", "url": "https://transfotechacademy.com" },
-      "educationalCredentialAwarded": "Professional Certificate in Data Engineering and Data Science"
+      "educationalCredentialAwarded": "Professional Certificate in Data Engineering and Data Science",
+      "offers": { "@type": "AggregateOffer", "lowPrice": "3499", "highPrice": "5499", "priceCurrency": "USD", "offerCount": "3" }
     }
     </script>
     <link rel="canonical" href="https://transfotechacademy.com/data-engineering-with-data-science/" />
@@ -100,10 +101,9 @@
       #careers .outcomes-row { grid-template-columns: 1fr 1.5fr; gap: 24px; }
       #careers .outcomes-row span:last-child { text-align: left; font-weight: 600; }
       @media (max-width: 560px) { #careers .outcomes-row { grid-template-columns: 1fr; gap: 4px; } }
-      /* pricing: tuition not yet confirmed, so the amount is a short label rather than a figure */
-      .pv2-card__amount--tbc { font-size: 1.5rem; line-height: 1.2; white-space: nowrap; }
-      /* two-card pricing (individual section + complete bootcamp) */
-      @media (min-width: 901px) { .pv2__grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; margin-left: auto; margin-right: auto; } }
+      /* pricing: stacked payment lines under the price, muted pill for the lowest-payment plan */
+      .pv2-card__price-meta--stack { flex-direction: column; align-items: flex-start; gap: 2px; }
+      .pv2-card__save--muted { background: rgba(255, 255, 255, 0.1); color: #d9c7ff; }
     </style>
   </head>
 
@@ -2235,30 +2235,41 @@
       <section class="pricing pricing-v2" id="pricing">
         <div class="container">
           <header class="section-head" data-animate="fade-up">
-            <span class="eyebrow">Enrollment Options</span>
-            <h2 class="h2">Two Ways to Enroll</h2>
+            <span class="eyebrow">Pricing</span>
+            <h2 class="h2">Choose how you want to pay</h2>
             <p class="section-sub">
-              Complete the full 24-week bootcamp, or enter an individual four-week section after demonstrating its prerequisites. Tuition is to be confirmed; book a free call for current fees, payment terms and any software or cloud charges.
+              Same bootcamp, same benefits, three ways to pay. Pay faster and save more.
             </p>
           </header>
 
-          <div class="pv2__grid pv2__grid--two">
+          <div class="pv2__grid">
             <article class="pv2-card" data-animate="fade-up" data-delay="0">
-              <span class="pv2-card__badge pv2-card__badge--muted">SINGLE SECTION</span>
-              <h3 class="pv2-card__title">Individual Four-Week Section</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount pv2-card__amount--tbc">Tuition to be confirmed</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__total-muted">4 weeks · individual enrollment</span></div>
-              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Any one of the six certificate sections</li><li><span class="pv2-check" aria-hidden="true">✓</span>8 live meetings, 16 to 24 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>Business brief, data dictionary, starting files and starter repository</li><li><span class="pv2-check" aria-hidden="true">✓</span>Readiness task confirming the section’s prerequisites</li><li><span class="pv2-check" aria-hidden="true">✓</span>Section project and assessment</li><li><span class="pv2-check" aria-hidden="true">✓</span>The certificate for that section after requirements are met</li></ul>
-              <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Free Call</button>
+              <span class="pv2-card__badge pv2-card__badge--muted">PAY IN FULL · BEST PRICE</span>
+              <h3 class="pv2-card__title">Done for Life</h3>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$3,499</span></div>
+              <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">One-time payment</span><span class="pv2-card__total-muted">No monthly bills</span></div>
+              <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $2,000 vs. Quick Starter</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
+              <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
             <article class="pv2-card pv2-card--featured" data-animate="fade-up" data-delay="140">
-              <span class="pv2-card__ribbon">FULL PROGRAM</span>
-              <h3 class="pv2-card__title">Complete Bootcamp</h3>
-              <div class="pv2-card__price"><span class="pv2-card__amount pv2-card__amount--tbc">Tuition to be confirmed</span></div>
-              <div class="pv2-card__price-meta"><span class="pv2-card__total-muted">24 weeks · six consecutive sections</span></div>
-              <p class="pv2-card__body">Data Engineering with Data Science</p>
-              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>12 weeks of data engineering, then 12 weeks of data science</li><li><span class="pv2-check" aria-hidden="true">✓</span>48 live meetings, 96 to 144 live hours</li><li><span class="pv2-check" aria-hidden="true">✓</span>All six section certificates after requirements are met</li><li><span class="pv2-check" aria-hidden="true">✓</span>Professional Certificate in Data Engineering and Data Science</li><li><span class="pv2-check" aria-hidden="true">✓</span>Integrated capstone with runbook, model card and monitoring plan</li></ul>
-              <button type="button" class="pv2-card__cta pv2-card__cta--light" data-modal-open="book">Book a Free Call</button>
+              <span class="pv2-card__ribbon">RECOMMENDED</span>
+              <span class="pv2-card__badge pv2-card__badge--below">3-PAYMENT PLAN</span>
+              <h3 class="pv2-card__title">Best Value Pack</h3>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$4,499</span></div>
+              <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,499 today</span><span class="pv2-card__total-muted">then $1,500 / month × 2 months</span></div>
+              <div class="pv2-card__price-meta"><span class="pv2-card__save">Save $1,000 vs. Quick Starter</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
+              <button type="button" class="pv2-card__cta pv2-card__cta--light" data-modal-open="book">Book a Call</button>
+            </article>
+            <article class="pv2-card" data-animate="fade-up" data-delay="280">
+              <span class="pv2-card__badge pv2-card__badge--muted">FLEXIBLE PLAN</span>
+              <h3 class="pv2-card__title">Quick Starter Pack</h3>
+              <div class="pv2-card__price"><span class="pv2-card__amount">$5,499</span></div>
+              <div class="pv2-card__price-meta pv2-card__price-meta--stack"><span class="pv2-card__total-muted">$1,099 today</span><span class="pv2-card__total-muted">then $1,100 / month × 4 months</span></div>
+              <div class="pv2-card__price-meta"><span class="pv2-card__save pv2-card__save--muted">Lowest monthly payment</span></div>
+              <ul class="pv2-card__features"><li><span class="pv2-check" aria-hidden="true">✓</span>Fast-Track Interview Preparation &amp; Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Personalized 1-on-1 Mentorship</li><li><span class="pv2-check" aria-hidden="true">✓</span>1-Year Complimentary Course Retake Access</li><li><span class="pv2-check" aria-hidden="true">✓</span>Dedicated Job Placement Assistance Until You're Hired</li><li><span class="pv2-check" aria-hidden="true">✓</span>Project Experience Letter &amp; Career Advancement Support</li><li><span class="pv2-check" aria-hidden="true">✓</span>Mock Interviews &amp; Assessment Practice</li><li><span class="pv2-check" aria-hidden="true">✓</span>Live Instructor-Led Classes with Recorded Sessions Available on the LMS</li></ul>
+              <button type="button" class="pv2-card__cta pv2-card__cta--ghost" data-modal-open="book">Book a Call</button>
             </article>
           </div>
         </div>
@@ -2494,7 +2505,7 @@
               <summary>
                 How much does it cost?<span class="chev"></span>
               </summary>
-              <p>Tuition for the complete bootcamp and for individual four-week sections is to be confirmed. Book a free consultation and an advisor can share current fees, payment terms and any software or cloud arrangements.</p>
+              <p>The complete bootcamp is $3,499 paid in full, $4,499 in three payments ($1,499 today, then $1,500 a month for 2 months), or $5,499 in five payments ($1,099 today, then $1,100 a month for 4 months). The same bootcamp and benefits apply to every plan. Tuition for an individual four-week section is to be confirmed; an advisor can share it, along with any software or cloud arrangements, on a free consultation.</p>
             </details>
             <details class="faq-item" data-animate="fade-up" data-delay="400">
               <summary>

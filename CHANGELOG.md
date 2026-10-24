@@ -11,15 +11,23 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 ## [Unreleased]
 
 ### Pending
-- Tuition for the full bootcamp and for individual sections is still to be confirmed (the program PDF says to
-  publish fees, payment terms and software/cloud charges before opening enrollment). The pricing cards and the
-  FAQ currently say "to be confirmed"; replace them with figures once set.
+- Tuition for an individual four-week section is still to be confirmed (only the full bootcamp is priced; the FAQ
+  says so).
 - Deploy to the new folder `public_html/data-engineering-with-data-science/` (canonical, og:url and og:image now
   point there) and redirect the old `certificate-in-data-engineering-foundation/` URL to it if it was ever live.
 - Confirm the instructor line-up for the 24-week program (the PDF does not name one; Kris Jamsa is unchanged).
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Cohort start date: set `data-cohort-date` (ISO, e.g. `2026-12-01T09:00:00`) on
   `#urgency-countdown` to switch on the countdown, and restore the seat-count and sticky-bar copy.
+
+## [2.1.0] - 2026-10-24
+
+### Changed
+- Pricing is now three ways to pay for the same bootcamp: Done for Life $3,499 (pay in full, save $2,000),
+  Best Value Pack $4,499 ($1,499 today then $1,500 a month for 2 months, recommended) and Quick Starter Pack
+  $5,499 ($1,099 today then $1,100 a month for 4 months), each with the same seven benefits.
+  Replaces the two "Tuition to be confirmed" cards.
+- FAQ cost answer and JSON-LD (AggregateOffer $3,499 to $5,499) updated to match.
 
 ## [2.0.1] - 2026-10-24
 
