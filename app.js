@@ -142,6 +142,7 @@
     activeModal = modal;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
+    modal.inert = false;
     document.body.classList.add('modal-lock');
     loadGhlForms(modal);
     const closeBtn = modal.querySelector('.modal__close');
@@ -152,6 +153,7 @@
     if (!modal) return;
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
+    modal.inert = true;
     document.body.classList.remove('modal-lock');
     activeModal = null;
     if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
@@ -340,6 +342,7 @@
     iframe.src = VIDEO_SRC;
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden', 'false');
+    modal.inert = false;
     document.body.classList.add('modal-lock');
     setTimeout(() => closeBtn && closeBtn.focus(), 100);
   }
@@ -347,6 +350,7 @@
   function closeVideo() {
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
+    modal.inert = true;
     document.body.classList.remove('modal-lock');
     // Stop video by clearing src
     setTimeout(() => { iframe.src = ''; }, 300);
@@ -396,9 +400,11 @@ function initStickyCta() {
     if (window.scrollY > threshold) {
       bar.classList.add('is-visible');
       bar.setAttribute('aria-hidden', 'false');
+      bar.inert = false;
     } else {
       bar.classList.remove('is-visible');
       bar.setAttribute('aria-hidden', 'true');
+      bar.inert = true;
     }
   }
   function onScroll() {
@@ -416,6 +422,7 @@ function initStickyCta() {
       bar.classList.remove('is-visible');
       bar.classList.add('is-dismissed');
       bar.setAttribute('aria-hidden', 'true');
+      bar.inert = true;
       try { sessionStorage.setItem('ttStickyDismissed', '1'); } catch (_) {}
       window.removeEventListener('scroll', onScroll);
     });

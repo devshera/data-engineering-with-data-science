@@ -19,6 +19,29 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.3.3] - 2026-10-24
+
+Pre-launch QA: page speed, accessibility, security and bug sweep.
+
+### Fixed
+- Accessibility: hidden modals (consultation, curriculum, video) and the sticky bottom bar were `aria-hidden` but
+  still keyboard-focusable. They are now `inert` while hidden (toggled together with `aria-hidden`). Lighthouse
+  accessibility 96 -> 100 on mobile and desktop.
+- Meta and Open Graph description shortened from 244 to 163 characters so search results do not truncate it.
+
+### Performance
+- Page loads minified `style.min.css` (131 KB -> 100 KB, about 19 KB gzipped) and `app.min.js` (22 KB -> 12 KB,
+  about 4 KB gzipped); sources stay in the repo. Rebuild steps are in DEPLOY.md.
+- Logo served as a 96 px WebP (3 KB) instead of the 200 px JPG (10 KB) used at 32 to 44 px.
+- Measured with Lighthouse: mobile performance 99 with gzip as on cPanel (FCP 1.2 s, LCP 1.8 s, TBT 40 ms, CLS 0);
+  desktop 100; best practices 100; SEO 100.
+
+### Checked, no change needed
+- No horizontal overflow at 360, 390, 768, 1024, 1440 and 1920 px; no broken anchors, duplicate IDs, missing alt
+  text or console errors; JSON-LD valid; one H1 and no heading-level skips; privacy, terms and video links return 200.
+- No Content-Security-Policy violations when the page is served with the exact CSP from `.htaccess`, including
+  with both GoHighLevel form modals and the video modal open. External links use `rel="noopener noreferrer"`.
+
 ## [2.3.2] - 2026-10-24
 
 ### Fixed
