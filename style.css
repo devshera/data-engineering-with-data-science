@@ -2029,6 +2029,18 @@ body.modal-lock { overflow: hidden; }
 .icard--single .icard__name {
   font-size: 22px;
 }
+.icard__name-link {
+  display: inline-flex;
+  vertical-align: -3px;
+  margin-left: 6px;
+  color: #a9a6d8;
+  transition: color 0.2s, transform 0.2s;
+}
+.icard__name-link:hover,
+.icard__name-link:focus-visible {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
 .icard--single .icard__designation {
   color: #a9a6d8;
   font-weight: 800;

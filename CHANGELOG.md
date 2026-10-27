@@ -15,9 +15,18 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
   says so).
 - Deploy to the new folder `public_html/data-engineering-with-data-science/` (canonical, og:url and og:image now
   point there) and redirect the old `certificate-in-data-engineering-foundation/` URL to it if it was ever live.
-- Confirm the instructor line-up for the 24-week program (the PDF does not name one; Kris Jamsa is unchanged).
+- Confirm whether additional instructors join Shazeb Ali for the 24-week program.
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
+
+## [2.4.0] - 2026-10-27
+
+### Changed
+- Instructor section now features Shazeb Ali, MBA (Data & Analytics Engineer) in place of Kris Jamsa: new portrait
+  (images/Shazeb-Ali.webp, 600x600), bio, tags, heading, subheading and the four credential stats. Removed the
+  unused Kris-Jamsa.webp.
+- LinkedIn icon link beside the instructor name (opens his profile in a new tab); new .icard__name-link style, CSS
+  cache version bumped to 20261027a.
 
 ## [2.3.7] - 2026-10-24
 
