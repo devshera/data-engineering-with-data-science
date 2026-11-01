@@ -19,6 +19,14 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.5.0] - 2026-11-01
+
+### Changed
+- Offer bar now announces the 11:11 Sale: "Flat $1,100 Off Eligible Programs Enrollment - Ends NOV 12, 2026" with a
+  "Claim $1,100 Off" button (short mobile text: "$1,100 Off - Ends Nov 12"). Auto-expires after 2026-11-12 23:59:59.
+- Offer bar restyled to the new mauve gradient with purple badge and button (style.css, rebuilt style.min.css),
+  CSS cache version bumped to 20261101a.
+
 ## [2.4.0] - 2026-10-27
 
 ### Changed
