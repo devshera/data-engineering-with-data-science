@@ -19,6 +19,20 @@ The page was built from the Business & Data Analytics with AI landing page (v1.0
 - Rename the GoHighLevel forms (still titled "Data Engineering Foundation | …" in the GHL account).
 - Seat-count bar ("X of 25 taken") stays hidden until a real capacity and enrollment figure is available.
 
+## [2.6.0] - 2026-11-26
+
+### Changed
+- Black Friday campaign replaces the 11:11 Sale and the Nov 3, 2026 cohort messaging. Info bar: "🔥 Black Friday Career
+  Upgrade: 50% Off All Courses" (short mobile text, "Claim 50% Off", no badge or end date); auto-expires 2026-11-30 23:59:59.
+- Countdown now targets 2026-11-30 23:59:59 (visitor-local time) via `data-cohort-date` on #urgency-countdown. At zero the
+  info bar, bottom bar and urgency countdown are removed and the timer stops.
+- Bottom bar: "🔥 Black Friday Career Upgrade: 50% off all courses. — limited seats" with the countdown; no end date; removed the
+  "Save $2,000 when you pay in full" caption.
+- Urgency section: heading "Enrollment Closes Nov 30, 2026"; removed the "Cohort Starts Nov 3, 2026" badge.
+- Mouse effects (card tilt, hero parallax, magnetic buttons, hero particle mouse reaction) disabled on touch, no-hover and
+  screens <= 768px.
+- Pricing unchanged. app.min.js edited directly to match app.js (esbuild was not available); app.min.js cache version 20261126a.
+
 ## [2.5.0] - 2026-11-01
 
 ### Changed

@@ -192,7 +192,7 @@
 
 // 3D card tilt on hover
 (function initTilt() {
-  if (window.matchMedia('(pointer: coarse)').matches) return;
+  if (window.matchMedia('(pointer: coarse), (hover: none), (max-width: 768px)').matches) return;
 
   document.querySelectorAll('.step-card, .feature, .project-card, .story-card, .rating-card').forEach(card => {
     card.addEventListener('mousemove', e => {
@@ -211,7 +211,7 @@
 
 // Hero floating card parallax
 (function initHeroParallax() {
-  if (window.matchMedia('(pointer: coarse)').matches) return;
+  if (window.matchMedia('(pointer: coarse), (hover: none), (max-width: 768px)').matches) return;
 
   const hero  = document.querySelector('.hero');
   const cards = hero ? [...hero.querySelectorAll('.hero__card')] : [];
@@ -231,7 +231,7 @@
 
 // Magnetic primary buttons
 (function initMagnetic() {
-  if (window.matchMedia('(pointer: coarse)').matches) return;
+  if (window.matchMedia('(pointer: coarse), (hover: none), (max-width: 768px)').matches) return;
 
   const targets = '.hero__ctas .btn--primary, .nav .btn--primary, .guarantee .btn--primary, .final-cta .btn--primary';
   document.querySelectorAll(targets).forEach(btn => {
@@ -519,7 +519,7 @@ if (document.readyState === 'loading') {
   }
 
   const hero = canvas.closest('.hero');
-  if (hero) {
+  if (hero && !window.matchMedia('(pointer: coarse), (hover: none), (max-width: 768px)').matches) {
     hero.addEventListener('mousemove', e => {
       const r  = hero.getBoundingClientRect();
       mouse.x  = e.clientX - r.left;
@@ -535,8 +535,8 @@ if (document.readyState === 'loading') {
 
 // Countdown timer — urgency section
 (function initCountdown() {
-  // Cohort start comes from data-cohort-date on #urgency-countdown (ISO, e.g. 2026-12-01T09:00:00).
-  // Left empty until dates are announced, in which case the countdowns stay hidden and nothing ticks.
+  // Campaign deadline comes from data-cohort-date on #urgency-countdown (ISO, e.g. 2026-11-30T23:59:59).
+  // If empty or invalid, nothing ticks.
   const cdEl = document.getElementById('urgency-countdown');
   const TARGET = new Date((cdEl && cdEl.dataset.cohortDate) || '');
   if (isNaN(TARGET)) return;
@@ -565,9 +565,17 @@ if (document.readyState === 'loading') {
       if (main) main.textContent = txt;
       if (sticky) sticky.textContent = txt;
     });
+    // Campaign over: take the offer UI off the page and stop ticking
+    if (diff <= 0) {
+      ['promo-bar', 'sticky-cta', 'urgency-countdown'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.remove();
+      });
+      clearInterval(timer);
+    }
   }
+  const timer = setInterval(tick, 1000);
   tick();
-  setInterval(tick, 1000);
 })();
 
 // Seats progress bar — animate when scrolled into view
